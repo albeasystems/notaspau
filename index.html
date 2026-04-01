@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Notas PAU — Las notas de corte de todas las universidades públicas de España. Busca tu carrera, simula tu nota y descubre si puedes entrar."/>
+  <title>Notas PAU — Notas de Corte de Universidades España</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(160deg, #0f172a 0%, #1e3a8a 60%, #312e81 100%);
+      color: #fff;
+      padding: 100px 24px 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: "";
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(59,123,248,.35) 0%, transparent 70%);
+    }
+    .hero > * { position: relative; z-index: 1; }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.2);
+      color: #c7d2fe;
+      padding: 6px 16px; border-radius: 50px;
+      font-size: 13px; font-weight: 600;
+      margin-bottom: 28px;
+    }
+    .hero h1 {
+      font-size: clamp(36px, 6vw, 68px);
+      font-weight: 900; line-height: 1.1;
+      letter-spacing: -1.5px;
+      margin-bottom: 22px;
+    }
+    .hero h1 .highlight {
+      background: linear-gradient(90deg, #60a5fa, #a78bfa);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero p {
+      font-size: clamp(16px, 2vw, 20px);
+      color: #94a3b8;
+      max-width: 540px; margin: 0 auto 40px;
+      line-height: 1.7;
+    }
+    .hero-ctas { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--blue); color: #fff;
+      padding: 15px 32px; border-radius: 50px;
+      font-size: 16px; font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 8px 24px rgba(59,123,248,.45);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(59,123,248,.55); }
+    .btn-secondary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.2);
+      color: #fff;
+      padding: 15px 28px; border-radius: 50px;
+      font-size: 16px; font-weight: 600;
+      text-decoration: none;
+      transition: background .2s;
+    }
+    .btn-secondary:hover { background: rgba(255,255,255,.18); }
+
+    /* ── PHONE MOCKUP ── */
+    .hero-mockup { margin: 60px auto 0; max-width: 300px; }
+    .phone {
+      background: #1e293b; border-radius: 44px; padding: 14px;
+      box-shadow: 0 40px 80px rgba(0,0,0,.6), 0 0 0 1px rgba(255,255,255,.08);
+    }
+    .phone-screen {
+      background: #f8fafc; border-radius: 34px;
+      overflow: hidden; aspect-ratio: 9/19;
+      display: flex; flex-direction: column;
+    }
+    .phone-status { background: #fff; height: 28px; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; font-size: 11px; font-weight: 700; color: #0f172a; }
+    .phone-header { background: #fff; padding: 14px 16px 10px; border-bottom: 1px solid #e2e8f0; }
+    .phone-header-title { font-size: 17px; font-weight: 800; color: #0f172a; margin-bottom: 8px; }
+    .phone-search { background: #f1f5f9; border-radius: 10px; padding: 8px 12px; font-size: 12px; color: #94a3b8; display: flex; align-items: center; gap: 6px; }
+    .phone-list { flex: 1; overflow: hidden; background: #f8fafc; padding: 8px 0; }
+    .phone-row { background: #fff; margin: 4px 10px; border-radius: 12px; padding: 10px 12px; border: 1px solid #e2e8f0; }
+    .phone-row-name { font-size: 11px; font-weight: 700; color: #0f172a; margin-bottom: 2px; }
+    .phone-row-uni { font-size: 10px; color: #64748b; margin-bottom: 4px; }
+    .phone-row-footer { display: flex; justify-content: space-between; align-items: center; }
+    .phone-score { font-size: 13px; font-weight: 800; color: var(--blue); }
+    .phone-badge { font-size: 9px; background: #eff6ff; color: var(--blue); padding: 2px 7px; border-radius: 20px; font-weight: 700; }
+    .phone-badge.purple { background: #f5f3ff; color: var(--purple); }
+    .phone-badge.teal { background: #f0fdfa; color: var(--teal); }
+
+    /* ── STATS ── */
+    .stats { background: #fff; border-bottom: 1px solid var(--border); }
+    .stats-inner { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); text-align: center; }
+    .stat { padding: 32px 24px; border-right: 1px solid var(--border); }
+    .stat:last-child { border-right: none; }
+    .stat-num { font-size: 38px; font-weight: 900; color: var(--blue); letter-spacing: -1px; line-height: 1; }
+    .stat-label { font-size: 14px; color: var(--text-muted); margin-top: 4px; font-weight: 500; }
+
+    /* ── SECTIONS ── */
+    section { padding: 88px 24px; }
+    .section-title { font-size: clamp(26px, 4vw, 40px); font-weight: 900; letter-spacing: -.5px; line-height: 1.15; margin-bottom: 14px; }
+    .section-sub { font-size: 17px; color: var(--text-muted); max-width: 520px; line-height: 1.7; }
+    .section-header { margin-bottom: 56px; }
+
+    /* ── FEATURES ── */
+    .features-section { background: var(--bg); }
+    .features-grid { max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+    .feature-card { background: #fff; border-radius: 20px; border: 1px solid var(--border); padding: 30px 28px; transition: transform .2s, box-shadow .2s; }
+    .feature-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,.08); }
+    .feature-icon { width: 52px; height: 52px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 26px; margin-bottom: 18px; }
+    .feature-icon.blue   { background: #eff6ff; }
+    .feature-icon.purple { background: #f5f3ff; }
+    .feature-icon.yellow { background: #fffbeb; }
+    .feature-icon.teal   { background: #f0fdfa; }
+    .feature-card h3 { font-size: 17px; font-weight: 800; margin-bottom: 8px; }
+    .feature-card p { font-size: 14px; color: var(--text-muted); line-height: 1.65; }
+
+    /* ── SIMULADOR ── */
+    .simulador-section { background: linear-gradient(160deg, #0f172a, #1e3a8a); color: #fff; }
+    .simulador-inner { max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .simulador-section .section-label { color: #93c5fd; }
+    .simulador-section .section-title { color: #fff; }
+    .simulador-section .section-sub { color: #94a3b8; }
+    .sim-points { list-style: none; margin-top: 32px; display: flex; flex-direction: column; gap: 16px; }
+    .sim-point { display: flex; gap: 14px; align-items: flex-start; }
+    .sim-point-icon { width: 36px; height: 36px; border-radius: 10px; background: rgba(255,255,255,.1); display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+    .sim-point-text h4 { font-size: 15px; font-weight: 700; color: #e2e8f0; }
+    .sim-point-text p { font-size: 13px; color: #94a3b8; margin-top: 2px; line-height: 1.5; }
+    .sim-card { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); border-radius: 24px; padding: 28px; }
+    .sim-card-title { font-size: 13px; font-weight: 700; color: #94a3b8; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
+    .sim-score-big { font-size: 48px; font-weight: 900; color: #60a5fa; letter-spacing: -2px; text-align: center; margin-bottom: 4px; }
+    .sim-score-sub { font-size: 12px; color: #64748b; text-align: center; margin-bottom: 20px; }
+    .sim-slider { width: 100%; height: 6px; border-radius: 3px; background: linear-gradient(to right, #3B7BF8 75%, rgba(255,255,255,.15) 75%); margin-bottom: 24px; }
+    .sim-results { display: flex; flex-direction: column; gap: 8px; }
+    .sim-result-row { background: rgba(255,255,255,.05); border-radius: 12px; padding: 12px 14px; display: flex; justify-content: space-between; align-items: center; border: 1px solid rgba(255,255,255,.07); }
+    .sim-result-name { font-size: 13px; font-weight: 600; color: #e2e8f0; }
+    .sim-result-uni { font-size: 11px; color: #64748b; margin-top: 1px; }
+    .sim-chip { font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+    .sim-chip.green  { background: rgba(20,184,166,.2); color: #5eead4; }
+    .sim-chip.yellow { background: rgba(245,158,11,.2); color: #fbbf24; }
+    .sim-chip.red    { background: rgba(239,68,68,.15);  color: #f87171; }
+
+    /* ── HOW IT WORKS ── */
+    .how-section { background: #fff; }
+    .how-inner { max-width: 900px; margin: 0 auto; }
+    .how-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; position: relative; }
+    .how-steps::before { content: ""; position: absolute; top: 26px; left: 15%; right: 15%; height: 2px; background: linear-gradient(90deg, var(--blue), var(--purple)); z-index: 0; }
+    .how-step { text-align: center; position: relative; z-index: 1; }
+    .how-step-num { width: 52px; height: 52px; border-radius: 50%; background: linear-gradient(135deg, var(--blue), var(--purple)); color: #fff; font-size: 20px; font-weight: 900; display: flex; align-items: center; justify-content: center; margin: 0 auto 18px; box-shadow: 0 4px 16px rgba(59,123,248,.35); }
+    .how-step h3 { font-size: 16px; font-weight: 800; margin-bottom: 8px; }
+    .how-step p { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
+
+    /* ── RAMAS ── */
+    .ramas-section { background: #fff; }
+    .ramas-inner { max-width: 900px; margin: 0 auto; }
+    .ramas-grid { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; }
+    .rama-chip { display: flex; align-items: center; gap: 10px; background: var(--bg); border: 1px solid var(--border); border-radius: 50px; padding: 10px 20px; font-size: 14px; font-weight: 600; color: var(--text); transition: all .2s; }
+    .rama-chip:hover { border-color: var(--blue); color: var(--blue); background: var(--blue-light); }
+    .rama-chip .dot { width: 10px; height: 10px; border-radius: 50%; }
+
+    /* ── TESTIMONIALS ── */
+    .testimonials-section { background: var(--bg); }
+    .testimonials-grid { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .testimonial { background: #fff; border-radius: 20px; border: 1px solid var(--border); padding: 28px; }
+    .stars { color: var(--yellow); font-size: 16px; margin-bottom: 14px; letter-spacing: 2px; }
+    .testimonial q { font-size: 15px; color: var(--text); line-height: 1.7; font-style: italic; quotes: "«" "»"; }
+    .testimonial q::before { content: open-quote; }
+    .testimonial q::after { content: close-quote; }
+    .testimonial-author { margin-top: 16px; display: flex; align-items: center; gap: 12px; }
+    .author-avatar { width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 700; color: #fff; }
+    .author-info strong { display: block; font-size: 14px; font-weight: 700; }
+    .author-info span { font-size: 12px; color: var(--text-muted); }
+
+    /* ── PREMIUM ── */
+    .premium-section { background: linear-gradient(135deg, #f5f3ff, #eff6ff); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .premium-inner { max-width: 880px; margin: 0 auto; }
+    .premium-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 40px; }
+    .plan-card { background: #fff; border-radius: 22px; border: 1px solid var(--border); padding: 32px; transition: transform .2s; }
+    .plan-card.featured { border-color: var(--blue); box-shadow: 0 8px 32px rgba(59,123,248,.15); position: relative; }
+    .plan-badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--blue); color: #fff; font-size: 12px; font-weight: 700; padding: 4px 14px; border-radius: 20px; white-space: nowrap; }
+    .plan-card:hover { transform: translateY(-2px); }
+    .plan-name { font-size: 14px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+    .plan-price { font-size: 38px; font-weight: 900; color: var(--text); letter-spacing: -1px; }
+    .plan-price sup { font-size: 20px; font-weight: 700; vertical-align: super; }
+    .plan-price small { font-size: 15px; color: var(--text-muted); font-weight: 500; }
+    .plan-desc { font-size: 14px; color: var(--text-muted); margin: 10px 0 22px; }
+    .plan-features { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .plan-features li { font-size: 14px; color: var(--text); display: flex; gap: 8px; align-items: flex-start; }
+    .plan-features li .check { color: var(--blue); font-size: 16px; flex-shrink: 0; }
+    .plan-features li .cross { color: #cbd5e1; font-size: 16px; flex-shrink: 0; }
+
+    /* ── FAQ (index overrides) ── */
+    .faq-section { background: #fff; }
+    .faq-inner { max-width: 720px; margin: 0 auto; }
+
+    /* ── DOWNLOAD ── */
+    .download-section { background: linear-gradient(160deg, #0f172a 0%, #1e3a8a 60%, #312e81 100%); color: #fff; text-align: center; padding: 100px 24px; }
+    .download-section h2 { font-size: clamp(28px, 5vw, 48px); font-weight: 900; letter-spacing: -1px; margin-bottom: 16px; }
+    .download-section p { font-size: 18px; color: #94a3b8; max-width: 480px; margin: 0 auto 40px; line-height: 1.7; }
+    .app-store-btn { display: inline-flex; align-items: center; gap: 10px; background: #fff; color: #0f172a; padding: 14px 28px; border-radius: 16px; font-size: 15px; font-weight: 700; text-decoration: none; box-shadow: 0 8px 24px rgba(0,0,0,.25); transition: transform .2s, box-shadow .2s; }
+    .app-store-btn:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(0,0,0,.35); }
+    .app-store-btn .store-icon { font-size: 26px; }
+    .app-store-btn .store-text small { display: block; font-size: 10px; font-weight: 500; color: #64748b; text-transform: uppercase; letter-spacing: .5px; }
+    .app-store-btn .store-text strong { font-size: 18px; font-weight: 800; }
+    .download-note { margin-top: 20px; font-size: 13px; color: #64748b; }
+
+    /* ── RESPONSIVE (index-specific) ── */
+    @media (max-width: 720px) {
+      .stats-inner { grid-template-columns: 1fr; }
+      .stat { border-right: none; border-bottom: 1px solid var(--border); }
+      .stat:last-child { border-bottom: none; }
+      .simulador-inner { grid-template-columns: 1fr; }
+      .how-steps { grid-template-columns: 1fr; gap: 24px; }
+      .how-steps::before { display: none; }
+      .premium-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <div class="icon">🎓</div>
+      <span>Notas PAU</span>
+    </a>
+    <div class="nav-links">
+      <a href="#funcionalidades" class="nav-hide">Funcionalidades</a>
+      <a href="#simulador" class="nav-hide">Simulador</a>
+      <a href="support.html" class="nav-hide">Soporte</a>
+      <a href="#descargar" class="btn-nav">Descargar gratis</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-badge">✨ Actualizado con datos de 2025</div>
+    <h1>
+      Sabe si puedes entrar<br/>en la carrera de<br/>
+      <span class="highlight">tus sueños</span>
+    </h1>
+    <p>Las notas de corte de todas las universidades públicas de España. Busca, filtra y simula tu nota — en segundos.</p>
+    <div class="hero-ctas">
+      <a href="#descargar" class="btn-primary">
+        <span>🍎</span> Descarga gratis en iOS
+      </a>
+      <a href="#simulador" class="btn-secondary">
+        Ver cómo funciona →
+      </a>
+    </div>
+
+    <!-- PHONE MOCKUP -->
+    <div class="hero-mockup">
+      <div class="phone">
+        <div class="phone-screen">
+          <div class="phone-status">
+            <span>9:41</span><span>●●●</span>
+          </div>
+          <div class="phone-header">
+            <div class="phone-header-title">Notas PAU</div>
+            <div class="phone-search">🔍 Busca carrera o universidad...</div>
+          </div>
+          <div class="phone-list">
+            <div class="phone-row">
+              <div class="phone-row-name">Medicina</div>
+              <div class="phone-row-uni">Universidad Complutense de Madrid</div>
+              <div class="phone-row-footer">
+                <span class="phone-score">13.52</span>
+                <span class="phone-badge">Ciencias de la Salud</span>
+              </div>
+            </div>
+            <div class="phone-row">
+              <div class="phone-row-name">Ingeniería Informática</div>
+              <div class="phone-row-uni">Universitat Politècnica de Catalunya</div>
+              <div class="phone-row-footer">
+                <span class="phone-score">11.80</span>
+                <span class="phone-badge purple">Ingeniería</span>
+              </div>
+            </div>
+            <div class="phone-row">
+              <div class="phone-row-name">Derecho</div>
+              <div class="phone-row-uni">Universidad de Salamanca</div>
+              <div class="phone-row-footer">
+                <span class="phone-score">9.20</span>
+                <span class="phone-badge teal">CC. Sociales</span>
+              </div>
+            </div>
+            <div class="phone-row">
+              <div class="phone-row-name">ADE + Derecho</div>
+              <div class="phone-row-uni">Universidad Carlos III de Madrid</div>
+              <div class="phone-row-footer">
+                <span class="phone-score">12.40</span>
+                <span class="phone-badge purple">Doble Grado</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stats-inner">
+      <div class="stat">
+        <div class="stat-num">+15.000</div>
+        <div class="stat-label">Notas de corte</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">+80</div>
+        <div class="stat-label">Universidades públicas</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">17</div>
+        <div class="stat-label">Comunidades autónomas</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FEATURES -->
+  <section class="features-section" id="funcionalidades">
+    <div style="max-width:1080px; margin:0 auto;">
+      <div class="section-header">
+        <span class="section-label">Funcionalidades</span>
+        <h2 class="section-title">Todo lo que necesitas<br/>para tu decisión más importante</h2>
+        <p class="section-sub">Notas PAU pone en tu bolsillo toda la información que necesitas para elegir carrera con confianza.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon blue">🔍</div>
+          <h3>Búsqueda potente</h3>
+          <p>Busca por nombre de carrera o universidad. Filtra por comunidad autónoma, nota de corte, rama del conocimiento, precio, idioma y más.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon yellow">⭐</div>
+          <h3>Guarda tus favoritas</h3>
+          <p>Marca las titulaciones que te interesan, añade tu nota objetivo y descubre al instante si puedes entrar. Con notas personales para cada una.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon teal">📈</div>
+          <h3>Evolución histórica</h3>
+          <p>Consulta cómo ha evolucionado la nota de corte de 2023 a 2025. Detecta tendencias y decide si la nota sube o baja.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon purple">🎯</div>
+          <h3>Simulador de nota</h3>
+          <p>Introduce tu nota y descubre todas las carreras a las que puedes acceder, las que tienes muy cerca y las que necesitarás subir nota.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIMULADOR -->
+  <section class="simulador-section" id="simulador">
+    <div class="simulador-inner">
+      <div>
+        <span class="section-label">Simulador</span>
+        <h2 class="section-title">Introduce tu nota.<br/>Descubre tu futuro.</h2>
+        <p class="section-sub">El simulador más completo para la PAU. Con un solo gesto, sabe exactamente qué carreras te esperan.</p>
+        <ul class="sim-points">
+          <li class="sim-point">
+            <div class="sim-point-icon">✅</div>
+            <div class="sim-point-text">
+              <h4>Accedes con margen</h4>
+              <p>Carreras donde tu nota supera en 1 o más puntos la nota de corte.</p>
+            </div>
+          </li>
+          <li class="sim-point">
+            <div class="sim-point-icon">⚡</div>
+            <div class="sim-point-text">
+              <h4>Justo al límite</h4>
+              <p>Entras, pero con menos de 1 punto de margen. Ojo con los cambios de año.</p>
+            </div>
+          </li>
+          <li class="sim-point">
+            <div class="sim-point-icon">🎯</div>
+            <div class="sim-point-text">
+              <h4>Muy cerca (≤ 0.5 puntos)</h4>
+              <p>Con un pequeño esfuerzo extra, estas carreras podrían ser tuyas.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="sim-card">
+        <div class="sim-card-title">Simulador de nota</div>
+        <div class="sim-score-big">9.75</div>
+        <div class="sim-score-sub">Tu nota PAU</div>
+        <div class="sim-slider"></div>
+        <div class="sim-results">
+          <div class="sim-result-row">
+            <div>
+              <div class="sim-result-name">Ingeniería Informática</div>
+              <div class="sim-result-uni">Univ. Autónoma de Madrid</div>
+            </div>
+            <span class="sim-chip green">Accedes ✓</span>
+          </div>
+          <div class="sim-result-row">
+            <div>
+              <div class="sim-result-name">Psicología</div>
+              <div class="sim-result-uni">Univ. de Granada</div>
+            </div>
+            <span class="sim-chip yellow">Al límite ⚡</span>
+          </div>
+          <div class="sim-result-row">
+            <div>
+              <div class="sim-result-name">Medicina</div>
+              <div class="sim-result-uni">Univ. de Sevilla</div>
+            </div>
+            <span class="sim-chip red">Te faltan 0.3</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-section">
+    <div class="how-inner">
+      <div class="section-header" style="text-align:center;">
+        <span class="section-label">Cómo funciona</span>
+        <h2 class="section-title">Tres pasos.<br/>Una decisión bien tomada.</h2>
+      </div>
+      <div class="how-steps">
+        <div class="how-step">
+          <div class="how-step-num">1</div>
+          <h3>Descarga la app</h3>
+          <p>Gratis en la App Store. Sin registro ni cuenta. Abre y empieza en segundos.</p>
+        </div>
+        <div class="how-step">
+          <div class="how-step-num">2</div>
+          <h3>Busca o simula</h3>
+          <p>Explora miles de notas de corte o usa el simulador con tu nota para ver qué opciones tienes.</p>
+        </div>
+        <div class="how-step">
+          <div class="how-step-num">3</div>
+          <h3>Guarda y compara</h3>
+          <p>Marca tus favoritas, añade tu nota objetivo y ten tu lista de opciones siempre a mano.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RAMAS -->
+  <section class="ramas-section">
+    <div class="ramas-inner">
+      <span class="section-label">Ramas de conocimiento</span>
+      <h2 class="section-title">Toda la oferta universitaria,<br/>organizada para ti</h2>
+      <div class="ramas-grid">
+        <div class="rama-chip"><span class="dot" style="background:#ef4444;"></span>Ciencias de la Salud</div>
+        <div class="rama-chip"><span class="dot" style="background:#3B7BF8;"></span>Ingeniería y Arquitectura</div>
+        <div class="rama-chip"><span class="dot" style="background:#8B5CF6;"></span>Ciencias Sociales y Jurídicas</div>
+        <div class="rama-chip"><span class="dot" style="background:#14B8A6;"></span>Ciencias</div>
+        <div class="rama-chip"><span class="dot" style="background:#F59E0B;"></span>Arte y Humanidades</div>
+        <div class="rama-chip"><span class="dot" style="background:#6366f1;"></span>Doble Grado</div>
+        <div class="rama-chip"><span class="dot" style="background:#10b981;"></span>Grados Online</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials-section">
+    <div style="max-width:1000px; margin:0 auto;">
+      <div class="section-header" style="text-align:center;">
+        <span class="section-label">Valoraciones</span>
+        <h2 class="section-title">Lo que dicen los estudiantes</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <q>La mejor app que he encontrado para la selectividad. El simulador me ahorró semanas de búsqueda en webs lentas y desactualizadas.</q>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#3B7BF8,#8B5CF6);">A</div>
+            <div class="author-info">
+              <strong>Andrea M.</strong>
+              <span>Estudiante de 2º Bachillerato, Madrid</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <q>Super útil para comparar opciones. Puse mi nota en el simulador y en segundos vi todas las carreras a las que podía acceder. ¡Increíble!</q>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#14B8A6,#3B7BF8);">C</div>
+            <div class="author-info">
+              <strong>Carlos R.</strong>
+              <span>Estudiante universitario, Sevilla</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <q>Le puse 5 estrellas porque no existe nada parecido con una interfaz tan limpia. Los filtros de comunidad y rama son un acierto total.</q>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#F59E0B,#ef4444);">L</div>
+            <div class="author-info">
+              <strong>Laura P.</strong>
+              <span>Recién graduada, Barcelona</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREMIUM -->
+  <section class="premium-section">
+    <div class="premium-inner">
+      <div class="section-header">
+        <span class="section-label">Planes</span>
+        <h2 class="section-title">Gratis para empezar.<br/>Premium para ir a fondo.</h2>
+        <p class="section-sub">Empieza gratis y desbloquea el simulador completo y más funcionalidades con Premium.</p>
+      </div>
+      <div class="premium-grid">
+        <div class="plan-card">
+          <div class="plan-name">Gratuito</div>
+          <div class="plan-price">0<small> €</small></div>
+          <div class="plan-desc">Para explorar y empezar a decidir.</div>
+          <ul class="plan-features">
+            <li><span class="check">✓</span> Búsqueda y filtros completos</li>
+            <li><span class="check">✓</span> Notas de corte actualizadas</li>
+            <li><span class="check">✓</span> Guardar favoritas ilimitadas</li>
+            <li><span class="check">✓</span> Histórico de notas (2023–2025)</li>
+            <li><span class="cross">✕</span> Simulador limitado (10 resultados)</li>
+          </ul>
+        </div>
+        <div class="plan-card featured">
+          <div class="plan-badge">Más popular</div>
+          <div class="plan-name">Premium</div>
+          <div class="plan-price"><sup>€</sup>1<small>.99 pago único</small></div>
+          <div class="plan-desc">Para tomar la mejor decisión de tu vida.</div>
+          <ul class="plan-features">
+            <li><span class="check">✓</span> Todo lo del plan gratuito</li>
+            <li><span class="check">✓</span> Simulador completo sin límites</li>
+            <li><span class="check">✓</span> Sin anuncios</li>
+            <li><span class="check">✓</span> Acceso anticipado a nuevas funciones</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section" id="faq">
+    <div class="faq-inner">
+      <div class="section-header" style="text-align:center;">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title">Preguntas frecuentes</h2>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggle(this)">¿Las notas de corte son del año actual? <span class="arrow">▼</span></div>
+        <div class="faq-a">Sí. La app incluye las notas de corte de 2025 (la convocatoria más reciente), así como el histórico de 2023 y 2024 para que puedas ver la tendencia de cada carrera.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggle(this)">¿Para qué comunidades autónomas está disponible? <span class="arrow">▼</span></div>
+        <div class="faq-a">Notas PAU cubre todas las universidades públicas de las 17 comunidades autónomas de España, incluyendo tanto el turno general como los turnos específicos (mayores de 25, discapacidad, etc.).</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggle(this)">¿Cómo funciona el simulador? <span class="arrow">▼</span></div>
+        <div class="faq-a">Introduce tu nota PAU con el deslizador y el simulador te muestra al instante las carreras a las que accedes con margen, las que estás justo al límite y las que te quedan muy cerca (menos de 0.5 puntos). Puedes filtrar por rama, comunidad y tipo de universidad.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggle(this)">¿Qué incluye el plan gratuito? <span class="arrow">▼</span></div>
+        <div class="faq-a">La versión gratuita incluye acceso completo a la búsqueda y filtros, notas de corte actualizadas, favoritas ilimitadas e histórico. El simulador muestra los primeros 10 resultados. Con Premium, el simulador es ilimitado y la app no muestra anuncios.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggle(this)">Compré Premium pero los anuncios siguen apareciendo. <span class="arrow">▼</span></div>
+        <div class="faq-a">Ve a Configuración → Premium → Restaurar compra dentro de la app. Esto verificará tu compra con Apple y eliminará todos los anuncios. Asegúrate de estar conectado con el mismo Apple ID que usaste para comprar.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggle(this)">¿Está disponible para Android? <span class="arrow">▼</span></div>
+        <div class="faq-a">Actualmente Notas PAU está disponible únicamente para iPhone (iOS). Estamos evaluando el soporte para Android en futuras versiones.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD CTA -->
+  <section class="download-section" id="descargar">
+    <h2>Tu carrera empieza<br/>con la decisión correcta</h2>
+    <p>Únete a los miles de estudiantes que ya usan Notas PAU para preparar su futuro. Gratis, en tu iPhone.</p>
+    <a href="https://apps.apple.com/es/app/notas-pau/id6743827730" class="app-store-btn">
+      <span class="store-icon">🍎</span>
+      <div class="store-text">
+        <small>Disponible en</small>
+        <strong>App Store</strong>
+      </div>
+    </a>
+    <div class="download-note">Gratis · iOS 16+ · Sin registro</div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <div class="icon">🎓</div>
+          <span>Notas PAU</span>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Inicio</a>
+          <a href="privacy.html">Política de privacidad</a>
+          <a href="support.html">Soporte</a>
+          <a href="https://apps.apple.com/es/app/notas-pau/id6743827730">App Store</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Notas PAU. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggle(el) {
+      el.classList.toggle('open');
+      el.nextElementSibling.classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>
