@@ -1,184 +1,162 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Política de Privacidad — Notas de Corte PAU</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #f5f5f7;
-      color: #1d1d1f;
-      line-height: 1.7;
-    }
-    header {
-      background: #fff;
-      border-bottom: 1px solid #e0e0e5;
-      padding: 20px 24px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    header h1 { font-size: 1.1rem; font-weight: 600; color: #1d1d1f; }
-    header span { font-size: 1.5rem; }
-    .container {
-      max-width: 760px;
-      margin: 40px auto;
-      background: #fff;
-      border-radius: 16px;
-      padding: 48px 56px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-    }
-    h2 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; }
-    .meta { color: #6e6e73; font-size: 0.9rem; margin-bottom: 36px; }
-    h3 { font-size: 1.15rem; font-weight: 600; margin: 32px 0 10px; color: #1d1d1f; }
-    p { margin-bottom: 14px; color: #3a3a3c; }
-    ul { padding-left: 20px; margin-bottom: 14px; color: #3a3a3c; }
-    ul li { margin-bottom: 6px; }
-    a { color: #0071e3; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .chip {
-      display: inline-block;
-      background: #f2f2f7;
-      border-radius: 8px;
-      padding: 4px 10px;
-      font-size: 0.8rem;
-      font-weight: 500;
-      color: #6e6e73;
-      margin-bottom: 32px;
-    }
-    footer {
-      text-align: center;
-      padding: 32px;
-      color: #6e6e73;
-      font-size: 0.85rem;
-    }
-    @media (max-width: 600px) {
-      .container { padding: 32px 24px; margin: 16px; }
-    }
-  </style>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Política de privacidad de Notas PAU. Información sobre cómo tratamos tus datos."/>
+  <title>Política de Privacidad — Notas PAU</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-<header>
-  <span>📊</span>
-  <h1>Notas de Corte PAU</h1>
-</header>
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <div class="icon">🎓</div>
+      <span>Notas PAU</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-hide">Inicio</a>
+      <a href="privacy.html" class="active">Privacidad</a>
+      <a href="support.html" class="nav-hide">Soporte</a>
+      <a href="https://apps.apple.com/es/app/notas-pau/id6743827730" class="btn-nav">Descargar</a>
+    </div>
+  </nav>
 
-<div class="container">
-  <h2>Política de Privacidad</h2>
-  <p class="meta">Última actualización: 1 de abril de 2026</p>
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <h1>Política de Privacidad</h1>
+    <p>Nos comprometemos a proteger tu privacidad y a ser completamente transparentes.</p>
+  </div>
 
-  <p>
-    Esta Política de Privacidad describe cómo <strong>Notas de Corte PAU</strong>
-    ("la aplicación", "nosotros") trata la información cuando usas nuestra app de iOS.
-    Nos comprometemos a proteger tu privacidad y a ser completamente transparentes.
-  </p>
+  <div class="content">
+    <div class="card prose">
 
-  <h3>1. Datos que NO recopilamos</h3>
-  <p>La aplicación <strong>no requiere registro ni cuenta de usuario</strong>. No recopilamos:</p>
-  <ul>
-    <li>Nombre, apellidos ni dirección de correo electrónico</li>
-    <li>Número de teléfono</li>
-    <li>Contraseñas</li>
-    <li>Datos de localización</li>
-    <li>Contactos ni fotos</li>
-  </ul>
+      <h2>Política de Privacidad</h2>
+      <span class="updated">Última actualización: 1 de abril de 2026</span>
 
-  <h3>2. Datos que sí se usan</h3>
+      <p>
+        Esta Política de Privacidad describe cómo <strong>Notas PAU</strong>
+        («la aplicación», «nosotros») trata la información cuando usas nuestra app de iOS.
+      </p>
 
-  <h3>2.1 Autenticación anónima (Firebase)</h3>
-  <p>
-    La app usa <strong>Firebase Anonymous Authentication</strong> de Google para
-    identificar tu sesión de forma técnica, sin asociarla a ningún dato personal tuyo.
-    Este identificador anónimo se usa exclusivamente para cargar los datos de notas de
-    corte desde nuestra base de datos.
-  </p>
+      <h3>1. Datos que NO recopilamos</h3>
+      <p>La aplicación <strong>no requiere registro ni cuenta de usuario</strong>. No recopilamos:</p>
+      <ul>
+        <li>Nombre, apellidos ni dirección de correo electrónico</li>
+        <li>Número de teléfono</li>
+        <li>Contraseñas</li>
+        <li>Datos de localización</li>
+        <li>Contactos ni fotos</li>
+      </ul>
 
-  <h3>2.2 Base de datos de notas (Firebase Firestore)</h3>
-  <p>
-    Las notas de corte universitarias se almacenan en <strong>Firebase Firestore</strong>
-    (Google Cloud). Tu dispositivo descarga estos datos para mostrártelos.
-    No subimos ningún dato personal tuyo a esta base de datos.
-  </p>
+      <h3>2. Datos que sí se utilizan</h3>
 
-  <h3>2.3 Favoritos y preferencias</h3>
-  <p>
-    Las carreras que guardas en favoritos y tus preferencias de filtro se almacenan
-    <strong>únicamente en tu dispositivo</strong> mediante el almacenamiento local del sistema.
-    Estos datos no se sincronizan con ningún servidor externo ni se comparten con terceros.
-  </p>
+      <h3>2.1 Autenticación anónima (Firebase)</h3>
+      <p>
+        La app usa <strong>Firebase Anonymous Authentication</strong> de Google para
+        identificar tu sesión de forma técnica, sin asociarla a ningún dato personal.
+        Este identificador anónimo se usa exclusivamente para cargar los datos de notas de
+        corte desde nuestra base de datos.
+      </p>
 
-  <h3>2.4 Publicidad (Google AdMob)</h3>
-  <p>
-    La versión gratuita muestra anuncios a través de <strong>Google AdMob</strong>.
-    Antes de mostrar anuncios personalizados, la app solicita tu permiso mediante el
-    <strong>diálogo de Transparencia en el Seguimiento de Apps (ATT)</strong> de Apple.
-  </p>
-  <ul>
-    <li>Si <strong>aceptas</strong>: AdMob puede usar el identificador de publicidad (IDFA)
-        para mostrarte anuncios relevantes según tus intereses.</li>
-    <li>Si <strong>rechazas</strong>: Solo se muestran anuncios contextuales no personalizados.</li>
-  </ul>
-  <p>
-    Puedes cambiar este permiso en cualquier momento desde
-    <strong>Ajustes → Privacidad y seguridad → Seguimiento</strong>.
-  </p>
-  <p>
-    Política de privacidad de Google AdMob:
-    <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>
-  </p>
+      <h3>2.2 Base de datos de notas (Firebase Firestore)</h3>
+      <p>
+        Las notas de corte universitarias se almacenan en <strong>Firebase Firestore</strong>
+        (Google Cloud). Tu dispositivo descarga estos datos para mostrártelos.
+        No subimos ningún dato personal a esta base de datos.
+      </p>
 
-  <h3>2.5 Compras dentro de la app (StoreKit)</h3>
-  <p>
-    Las suscripciones y compras únicas se procesan a través de <strong>Apple App Store</strong>.
-    Nosotros no almacenamos ni tenemos acceso a tu información de pago.
-    Apple gestiona todo el proceso de compra de acuerdo con sus propios términos y
-    política de privacidad.
-  </p>
+      <h3>2.3 Favoritos y preferencias</h3>
+      <p>
+        Las carreras que guardas en favoritos y tus preferencias de filtro se almacenan
+        <strong>únicamente en tu dispositivo</strong> mediante el almacenamiento local del sistema.
+        Estos datos no se sincronizan con ningún servidor externo ni se comparten con terceros.
+      </p>
 
-  <h3>3. Terceros y sus políticas</h3>
-  <ul>
-    <li><strong>Google Firebase</strong>: <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></li>
-    <li><strong>Google AdMob</strong>: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></li>
-    <li><strong>Apple App Store</strong>: <a href="https://www.apple.com/legal/privacy/es/" target="_blank">apple.com/legal/privacy</a></li>
-  </ul>
+      <h3>2.4 Publicidad (Google AdMob)</h3>
+      <p>
+        La versión gratuita muestra anuncios a través de <strong>Google AdMob</strong>.
+        Antes de mostrar anuncios personalizados, la app solicita tu permiso mediante el
+        <strong>diálogo de Transparencia en el Seguimiento de Apps (ATT)</strong> de Apple.
+      </p>
+      <ul>
+        <li>Si <strong>aceptas</strong>: AdMob puede usar el identificador de publicidad (IDFA) para mostrarte anuncios relevantes.</li>
+        <li>Si <strong>rechazas</strong>: solo se muestran anuncios contextuales no personalizados.</li>
+      </ul>
+      <p>
+        Puedes cambiar este permiso en cualquier momento desde
+        <strong>Ajustes → Privacidad y seguridad → Seguimiento</strong>.
+      </p>
+      <p>
+        Política de privacidad de Google AdMob:
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>
+      </p>
 
-  <h3>4. Retención de datos</h3>
-  <p>
-    Los datos técnicos anónimos generados por Firebase se retienen según la política
-    estándar de Google Firebase. Los favoritos y preferencias almacenados localmente
-    en tu dispositivo pueden eliminarse en cualquier momento desinstalando la aplicación.
-  </p>
+      <h3>2.5 Compras dentro de la app (StoreKit)</h3>
+      <p>
+        Las compras únicas se procesan a través de <strong>Apple App Store</strong>.
+        Nosotros no almacenamos ni tenemos acceso a tu información de pago.
+        Apple gestiona todo el proceso según sus propios términos y política de privacidad.
+      </p>
 
-  <h3>5. Menores de edad</h3>
-  <p>
-    La aplicación está diseñada para estudiantes de bachillerato y no recopila
-    intencionadamente datos de menores de 14 años. Si eres padre o tutor y crees que
-    tu hijo ha proporcionado información personal, contacta con nosotros para eliminarla.
-  </p>
+      <h3>3. Terceros y sus políticas</h3>
+      <ul>
+        <li><strong>Google Firebase:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></li>
+        <li><strong>Google AdMob:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+        <li><strong>Apple App Store:</strong> <a href="https://www.apple.com/legal/privacy/es/" target="_blank" rel="noopener">apple.com/legal/privacy</a></li>
+      </ul>
 
-  <h3>6. Cambios en esta política</h3>
-  <p>
-    Podemos actualizar esta Política de Privacidad ocasionalmente. Cualquier cambio
-    significativo será notificado mediante una actualización de la app.
-    La fecha de "última actualización" al inicio de esta página indica cuándo se realizó
-    la última revisión.
-  </p>
+      <h3>4. Retención de datos</h3>
+      <p>
+        Los datos técnicos anónimos generados por Firebase se retienen según la política
+        estándar de Google Firebase. Los favoritos almacenados localmente en tu dispositivo
+        pueden eliminarse en cualquier momento desinstalando la aplicación.
+      </p>
 
-  <h3>7. Contacto</h3>
-  <p>
-    Si tienes preguntas sobre esta política de privacidad, puedes contactarnos en:<br>
-    📧 <a href="mailto:albeasystems@gmail.com">albeasystems@gmail.com</a>
-  </p>
-</div>
+      <h3>5. Menores de edad</h3>
+      <p>
+        La aplicación está diseñada para estudiantes de bachillerato y no recopila
+        intencionadamente datos de menores de 14 años. Si eres padre o tutor y crees que
+        tu hijo ha proporcionado información personal, contáctanos para eliminarla.
+      </p>
 
-<footer>
-  © 2026 Notas de Corte PAU ·
-  <a href="support.html">Soporte</a> ·
-  <a href="privacy.html">Privacidad</a>
-</footer>
+      <h3>6. Cambios en esta política</h3>
+      <p>
+        Podemos actualizar esta Política de Privacidad ocasionalmente. La fecha de
+        «última actualización» al inicio de esta página indica cuándo se realizó la última revisión.
+        Los cambios significativos serán notificados mediante una actualización de la app.
+      </p>
+
+      <h3>7. Contacto</h3>
+      <p>
+        Si tienes preguntas sobre esta política de privacidad, puedes escribirnos a:<br/>
+        <a href="mailto:albeasystems@gmail.com">albeasystems@gmail.com</a>
+      </p>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <div class="icon">🎓</div>
+          <span>Notas PAU</span>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Inicio</a>
+          <a href="privacy.html">Política de privacidad</a>
+          <a href="support.html">Soporte</a>
+          <a href="https://apps.apple.com/es/app/notas-pau/id6743827730">App Store</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Notas PAU. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
