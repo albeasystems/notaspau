@@ -73,29 +73,33 @@
     .btn-secondary:hover { background: rgba(255,255,255,.18); }
 
     /* ── PHONE MOCKUP ── */
-    .hero-mockup { margin: 60px auto 0; max-width: 300px; }
+    .hero-mockup { margin: 60px auto 0; max-width: 280px; }
     .phone {
-      background: #1e293b; border-radius: 44px; padding: 14px;
+      background: #1e293b; border-radius: 44px; padding: 12px;
       box-shadow: 0 40px 80px rgba(0,0,0,.6), 0 0 0 1px rgba(255,255,255,.08);
     }
-    .phone-screen {
-      background: #f8fafc; border-radius: 34px;
-      overflow: hidden; aspect-ratio: 9/19;
-      display: flex; flex-direction: column;
+    .phone img { width: 100%; border-radius: 34px; display: block; }
+
+    /* ── SCREENSHOTS GALLERY ── */
+    .screenshots-section { background: #fff; overflow: hidden; }
+    .screenshots-inner { max-width: 1100px; margin: 0 auto; }
+    .screenshots-scroll {
+      display: flex; gap: 24px; align-items: flex-end;
+      overflow-x: auto; padding: 12px 4px 24px;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
     }
-    .phone-status { background: #fff; height: 28px; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; font-size: 11px; font-weight: 700; color: #0f172a; }
-    .phone-header { background: #fff; padding: 14px 16px 10px; border-bottom: 1px solid #e2e8f0; }
-    .phone-header-title { font-size: 17px; font-weight: 800; color: #0f172a; margin-bottom: 8px; }
-    .phone-search { background: #f1f5f9; border-radius: 10px; padding: 8px 12px; font-size: 12px; color: #94a3b8; display: flex; align-items: center; gap: 6px; }
-    .phone-list { flex: 1; overflow: hidden; background: #f8fafc; padding: 8px 0; }
-    .phone-row { background: #fff; margin: 4px 10px; border-radius: 12px; padding: 10px 12px; border: 1px solid #e2e8f0; }
-    .phone-row-name { font-size: 11px; font-weight: 700; color: #0f172a; margin-bottom: 2px; }
-    .phone-row-uni { font-size: 10px; color: #64748b; margin-bottom: 4px; }
-    .phone-row-footer { display: flex; justify-content: space-between; align-items: center; }
-    .phone-score { font-size: 13px; font-weight: 800; color: var(--blue); }
-    .phone-badge { font-size: 9px; background: #eff6ff; color: var(--blue); padding: 2px 7px; border-radius: 20px; font-weight: 700; }
-    .phone-badge.purple { background: #f5f3ff; color: var(--purple); }
-    .phone-badge.teal { background: #f0fdfa; color: var(--teal); }
+    .screenshots-scroll::-webkit-scrollbar { display: none; }
+    .screenshot-item { flex-shrink: 0; scroll-snap-align: start; }
+    .screenshot-item .phone-wrap {
+      background: #1e293b; border-radius: 36px; padding: 10px;
+      box-shadow: 0 20px 48px rgba(0,0,0,.18), 0 0 0 1px rgba(255,255,255,.06);
+      transition: transform .3s;
+    }
+    .screenshot-item:hover .phone-wrap { transform: translateY(-6px); }
+    .screenshot-item .phone-wrap img { width: 180px; border-radius: 28px; display: block; }
+    .screenshot-caption { text-align: center; margin-top: 14px; font-size: 13px; font-weight: 600; color: var(--text-muted); }
 
     /* ── STATS ── */
     .stats { background: #fff; border-bottom: 1px solid var(--border); }
@@ -182,8 +186,8 @@
 
     /* ── PREMIUM ── */
     .premium-section { background: linear-gradient(135deg, #f5f3ff, #eff6ff); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-    .premium-inner { max-width: 880px; margin: 0 auto; }
-    .premium-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 40px; }
+    .premium-inner { max-width: 1040px; margin: 0 auto; }
+    .premium-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 40px; }
     .plan-card { background: #fff; border-radius: 22px; border: 1px solid var(--border); padding: 32px; transition: transform .2s; }
     .plan-card.featured { border-color: var(--blue); box-shadow: 0 8px 32px rgba(59,123,248,.15); position: relative; }
     .plan-badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--blue); color: #fff; font-size: 12px; font-weight: 700; padding: 4px 14px; border-radius: 20px; white-space: nowrap; }
@@ -214,6 +218,9 @@
     .download-note { margin-top: 20px; font-size: 13px; color: #64748b; }
 
     /* ── RESPONSIVE (index-specific) ── */
+    @media (max-width: 900px) {
+      .premium-grid { grid-template-columns: repeat(2, 1fr); }
+    }
     @media (max-width: 720px) {
       .stats-inner { grid-template-columns: 1fr; }
       .stat { border-right: none; border-bottom: 1px solid var(--border); }
@@ -261,49 +268,7 @@
     <!-- PHONE MOCKUP -->
     <div class="hero-mockup">
       <div class="phone">
-        <div class="phone-screen">
-          <div class="phone-status">
-            <span>9:41</span><span>●●●</span>
-          </div>
-          <div class="phone-header">
-            <div class="phone-header-title">Notas PAU</div>
-            <div class="phone-search">🔍 Busca carrera o universidad...</div>
-          </div>
-          <div class="phone-list">
-            <div class="phone-row">
-              <div class="phone-row-name">Medicina</div>
-              <div class="phone-row-uni">Universidad Complutense de Madrid</div>
-              <div class="phone-row-footer">
-                <span class="phone-score">13.52</span>
-                <span class="phone-badge">Ciencias de la Salud</span>
-              </div>
-            </div>
-            <div class="phone-row">
-              <div class="phone-row-name">Ingeniería Informática</div>
-              <div class="phone-row-uni">Universitat Politècnica de Catalunya</div>
-              <div class="phone-row-footer">
-                <span class="phone-score">11.80</span>
-                <span class="phone-badge purple">Ingeniería</span>
-              </div>
-            </div>
-            <div class="phone-row">
-              <div class="phone-row-name">Derecho</div>
-              <div class="phone-row-uni">Universidad de Salamanca</div>
-              <div class="phone-row-footer">
-                <span class="phone-score">9.20</span>
-                <span class="phone-badge teal">CC. Sociales</span>
-              </div>
-            </div>
-            <div class="phone-row">
-              <div class="phone-row-name">ADE + Derecho</div>
-              <div class="phone-row-uni">Universidad Carlos III de Madrid</div>
-              <div class="phone-row-footer">
-                <span class="phone-score">12.40</span>
-                <span class="phone-badge purple">Doble Grado</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        <img src="images/screenshot-1.png" alt="Notas PAU — Lista de carreras"/>
       </div>
     </div>
   </section>
@@ -312,7 +277,7 @@
   <div class="stats">
     <div class="stats-inner">
       <div class="stat">
-        <div class="stat-num">+15.000</div>
+        <div class="stat-num">+5.000</div>
         <div class="stat-label">Notas de corte</div>
       </div>
       <div class="stat">
@@ -359,6 +324,38 @@
     </div>
   </section>
 
+  <!-- SCREENSHOTS -->
+  <section class="screenshots-section">
+    <div class="screenshots-inner">
+      <div class="section-header" style="text-align:center;">
+        <span class="section-label">La app por dentro</span>
+        <h2 class="section-title">Diseñada para estudiantes.<br/>Simple y sin ruido.</h2>
+      </div>
+      <div class="screenshots-scroll">
+        <div class="screenshot-item">
+          <div class="phone-wrap"><img src="images/screenshot-1.png" alt="Búsqueda de carreras"/></div>
+          <div class="screenshot-caption">Búsqueda y notas de corte</div>
+        </div>
+        <div class="screenshot-item">
+          <div class="phone-wrap"><img src="images/screenshot-3.png" alt="Filtros avanzados"/></div>
+          <div class="screenshot-caption">Filtros avanzados</div>
+        </div>
+        <div class="screenshot-item">
+          <div class="phone-wrap"><img src="images/screenshot-2.png" alt="Detalle de carrera"/></div>
+          <div class="screenshot-caption">Detalle de carrera</div>
+        </div>
+        <div class="screenshot-item">
+          <div class="phone-wrap"><img src="images/screenshot-4.png" alt="Simulador"/></div>
+          <div class="screenshot-caption">Simulador de nota</div>
+        </div>
+        <div class="screenshot-item">
+          <div class="phone-wrap"><img src="images/screenshot-5.png" alt="Mis Estudios"/></div>
+          <div class="screenshot-caption">Mis carreras favoritas</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- SIMULADOR -->
   <section class="simulador-section" id="simulador">
     <div class="simulador-inner">
@@ -390,33 +387,9 @@
           </li>
         </ul>
       </div>
-      <div class="sim-card">
-        <div class="sim-card-title">Simulador de nota</div>
-        <div class="sim-score-big">9.75</div>
-        <div class="sim-score-sub">Tu nota PAU</div>
-        <div class="sim-slider"></div>
-        <div class="sim-results">
-          <div class="sim-result-row">
-            <div>
-              <div class="sim-result-name">Ingeniería Informática</div>
-              <div class="sim-result-uni">Univ. Autónoma de Madrid</div>
-            </div>
-            <span class="sim-chip green">Accedes ✓</span>
-          </div>
-          <div class="sim-result-row">
-            <div>
-              <div class="sim-result-name">Psicología</div>
-              <div class="sim-result-uni">Univ. de Granada</div>
-            </div>
-            <span class="sim-chip yellow">Al límite ⚡</span>
-          </div>
-          <div class="sim-result-row">
-            <div>
-              <div class="sim-result-name">Medicina</div>
-              <div class="sim-result-uni">Univ. de Sevilla</div>
-            </div>
-            <span class="sim-chip red">Te faltan 0.3</span>
-          </div>
+      <div class="hero-mockup" style="margin: 0;">
+        <div class="phone">
+          <img src="images/screenshot-4.png" alt="Simulador Notas PAU"/>
         </div>
       </div>
     </div>
@@ -520,6 +493,7 @@
         <p class="section-sub">Empieza gratis y desbloquea el simulador completo y más funcionalidades con Premium.</p>
       </div>
       <div class="premium-grid">
+
         <div class="plan-card">
           <div class="plan-name">Gratuito</div>
           <div class="plan-price">0<small> €</small></div>
@@ -527,23 +501,50 @@
           <ul class="plan-features">
             <li><span class="check">✓</span> Búsqueda y filtros completos</li>
             <li><span class="check">✓</span> Notas de corte actualizadas</li>
-            <li><span class="check">✓</span> Guardar favoritas ilimitadas</li>
-            <li><span class="check">✓</span> Histórico de notas (2023–2025)</li>
+            <li><span class="check">✓</span> Favoritas ilimitadas</li>
+            <li><span class="check">✓</span> Histórico 2023–2025</li>
             <li><span class="cross">✕</span> Simulador limitado (10 resultados)</li>
+            <li><span class="cross">✕</span> Con anuncios</li>
           </ul>
         </div>
+
+        <div class="plan-card">
+          <div class="plan-name">Mensual</div>
+          <div class="plan-price"><sup>€</sup>2<small>,99/mes</small></div>
+          <div class="plan-desc">Acceso Premium mes a mes.</div>
+          <ul class="plan-features">
+            <li><span class="check">✓</span> Todo lo gratuito</li>
+            <li><span class="check">✓</span> Simulador sin límites</li>
+            <li><span class="check">✓</span> Sin anuncios</li>
+            <li><span class="cross">✕</span> Sin compromiso anual</li>
+          </ul>
+        </div>
+
         <div class="plan-card featured">
           <div class="plan-badge">Más popular</div>
-          <div class="plan-name">Premium</div>
-          <div class="plan-price"><sup>€</sup>1<small>.99 pago único</small></div>
-          <div class="plan-desc">Para tomar la mejor decisión de tu vida.</div>
+          <div class="plan-name">Anual</div>
+          <div class="plan-price"><sup>€</sup>14<small>,99/año</small></div>
+          <div class="plan-desc">La mejor relación calidad-precio.</div>
           <ul class="plan-features">
-            <li><span class="check">✓</span> Todo lo del plan gratuito</li>
-            <li><span class="check">✓</span> Simulador completo sin límites</li>
+            <li><span class="check">✓</span> Todo lo gratuito</li>
+            <li><span class="check">✓</span> Simulador sin límites</li>
             <li><span class="check">✓</span> Sin anuncios</li>
-            <li><span class="check">✓</span> Acceso anticipado a nuevas funciones</li>
+            <li><span class="check">✓</span> Ahorra un 58% vs mensual</li>
           </ul>
         </div>
+
+        <div class="plan-card">
+          <div class="plan-name">Vitalicio</div>
+          <div class="plan-price"><sup>€</sup>29<small> único</small></div>
+          <div class="plan-desc">Paga una vez, úsalo para siempre.</div>
+          <ul class="plan-features">
+            <li><span class="check">✓</span> Todo lo gratuito</li>
+            <li><span class="check">✓</span> Simulador sin límites</li>
+            <li><span class="check">✓</span> Sin anuncios</li>
+            <li><span class="check">✓</span> Acceso de por vida</li>
+          </ul>
+        </div>
+
       </div>
     </div>
   </section>
