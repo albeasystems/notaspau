@@ -61,14 +61,14 @@ function Hero() {
           <a href="#funciones" className="btn btn-ghost">Ver cómo funciona <ArrowRight size={18} aria-hidden="true" /></a>
         </div>
       </div>
-      <div className="rise mx-auto w-[min(78vw,340px)] lg:mx-0 lg:ml-auto" style={{ '--i': 3 }}>
+      <div className="rise mx-auto w-[min(70vw,290px)] lg:mx-0 lg:ml-auto" style={{ '--i': 3 }}>
         <Phone>
           <picture>
             <source media="(prefers-reduced-motion: reduce)" srcSet={img('journey-poster.jpg')} />
             <img
               src={img('journey.gif')}
-              width="400"
-              height="730"
+              width="402"
+              height="874"
               alt="Recorrido en la app Notas PAU: buscar Medicina, abrir la ficha con la comparativa 2025-2026, guardarla en favoritos y probar el simulador de nota."
               fetchPriority="high"
             />
@@ -103,7 +103,7 @@ function Numbers() {
 function Peek({ src, alt, className = '' }) {
   return (
     <Phone className={`!rounded-b-none !pb-0 ${className}`}>
-      <img src={img(src)} alt={alt} width="720" height="1313" loading="lazy" className="!rounded-b-none" />
+      <img src={img(src)} alt={alt} width="720" height="1565" loading="lazy" className="!rounded-b-none" />
     </Phone>
   )
 }
