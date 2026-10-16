@@ -8,8 +8,8 @@ const base = import.meta.env.BASE_URL
 const path = location.pathname.slice(base.length - 1).replace(/index\.html$/, '')
 const el = document.getElementById('root')
 const node = routeFor(path)
-if (el.hasChildNodes()) hydrateRoot(el, node)
-else createRoot(el).render(node)
+// Páginas de titulación y 404 son HTML estático: sin hidratar (null).
+if (node) { if (el.hasChildNodes()) hydrateRoot(el, node); else createRoot(el).render(node) }
 
 // Revelado al entrar en pantalla (solo opacidad/transform; respeta reduced-motion vía CSS).
 const els = document.querySelectorAll('.reveal')

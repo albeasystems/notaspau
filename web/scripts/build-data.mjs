@@ -54,4 +54,37 @@ const out = {
   comunidadesList: group('comunidadAutonoma'),
 }
 fs.writeFileSync(new URL('../src/seo-data.json', import.meta.url), JSON.stringify(out, null, 1))
+
+// Titulaciones con 2 o más universidades en el último año: tienen comparativa real.
+const prev = g.filter((x) => x.año === latest - 1 && x.nota > 0)
+const prevKey = new Map(prev.map((x) => [x.carrera + '|' + x.universidad, x.nota]))
+const byCarrera = new Map()
+for (const r of cur) byCarrera.set(r.carrera, [...(byCarrera.get(r.carrera) || []), r])
+const used = new Set()
+const grados = []
+for (const [name, rows] of byCarrera) {
+  const unis = new Map()
+  for (const r of rows) if (!unis.has(r.universidad) || unis.get(r.universidad).nota < r.nota) unis.set(r.universidad, r)
+  if (unis.size < 2) continue
+  let sl = slug(name).slice(0, 80).replace(/-$/, '')
+  for (let i = 2; used.has(sl); i++) sl = slug(name).slice(0, 76) + '-' + i
+  used.add(sl)
+  const list = [...unis.values()]
+    .map((r) => {
+      const p = prevKey.get(r.carrera + '|' + r.universidad)
+      return { u: r.universidad, c: r.comunidadAutonoma, n: r.nota, d: p ? +(r.nota - p).toFixed(3) : null }
+    })
+    .sort((a, b) => b.n - a.n)
+  const notas = list.map((x) => x.n).sort((a, b) => a - b)
+  const ds = list.filter((x) => x.d !== null).map((x) => x.d)
+  grados.push({
+    name, slug: sl, rama: rows[0].rama, unis: list,
+    mediana: +notas[Math.floor(notas.length / 2)].toFixed(3),
+    delta: ds.length ? +(ds.reduce((a, b) => a + b, 0) / ds.length).toFixed(3) : null,
+    conPrev: ds.length,
+  })
+}
+grados.sort((a, b) => b.unis.length - a.unis.length || a.name.localeCompare(b.name, 'es'))
+fs.writeFileSync(new URL('../src/grados-data.json', import.meta.url), JSON.stringify(grados))
+console.log('grados', grados.length)
 console.log(out.totalEntradas, out.titulaciones, out.universidades, out.comunidades, out.comunidadesList.length, out.ramas.length)

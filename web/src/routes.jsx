@@ -22,10 +22,10 @@ function StoreButton({ className = '' }) {
 
 function Header() {
   const links = [
-    ['Funciones', '#funciones'],
-    ['Simulador', '#simulador'],
-    ['Precio', '#precio'],
-    ['Preguntas', '#preguntas'],
+    ['Funciones', href('#funciones')],
+    ['Simulador', href('#simulador')],
+    ['Precio', href('#precio')],
+    ['Preguntas', href('#preguntas')],
     ['Notas de corte', href('notas-de-corte/')],
   ]
   return (
@@ -203,6 +203,7 @@ function Explore() {
         </div>
         <div className="reveal">
           <h3 className="text-sm font-semibold uppercase tracking-[0.14em] text-muted">Por comunidad</h3>
+          <p className="mt-3 text-[15px] text-muted">O mira <a href={href('notas-de-corte/titulaciones/')} className="font-semibold text-accent hover:underline">todas las titulaciones</a>.</p>
           <ul className="mt-4 flex flex-wrap gap-2">
             {D.comunidadesList.map((c) => (
               <li key={c.slug}>
@@ -296,6 +297,7 @@ function Footer() {
         </div>
         <nav aria-label="Pie" className="grid content-start gap-2">
           <a href={href('notas-de-corte/')} className="hover:text-ink">Notas de corte por comunidad</a>
+          <a href={href('notas-de-corte/titulaciones/')} className="hover:text-ink">Notas de corte por titulación</a>
           <a href={href('support.html')} className="hover:text-ink">Soporte</a>
           <a href={`mailto:${EMAIL}`} className="hover:text-ink">{EMAIL}</a>
         </nav>
@@ -360,6 +362,7 @@ function Hub() {
         <p className="mt-5 max-w-2xl text-lg text-muted">
           Resumen de {fmt(D.totalEntradas)} notas de corte de 2025 y {D.year} en {D.universidades} universidades y centros de España. Datos actualizados el {fechaLarga}. La app incluye el detalle completo y el simulador.
         </p>
+        <p className="mt-6"><a href={href('notas-de-corte/titulaciones/')} className="font-semibold text-accent hover:underline">Ver notas de corte por titulación</a></p>
         <h2 className="mt-12 text-2xl font-bold">Por comunidad autónoma</h2>
         <ul className="mt-4 grid gap-x-8 sm:grid-cols-2">
           {D.comunidadesList.map((c) => (
@@ -454,22 +457,126 @@ function DataPage({ slug }) {
   )
 }
 
+
+const delta = (d) => (d === null || d === undefined ? '' : (d > 0 ? '+' : d < 0 ? '-' : '') + Math.abs(d).toLocaleString('es-ES', { minimumFractionDigits: 3, maximumFractionDigits: 3 }))
+const brand = (t) => (t.length + 13 <= 60 ? `${t} | Notas PAU` : t)
+const cut = (t, n = 155) => (t.length <= n ? t : t.slice(0, n - 1).replace(/\s+\S*$/, '') + '…')
+
+export function gradoFaq(g) {
+  const hi = g.unis[0]
+  const lo = g.unis[g.unis.length - 1]
+  const out = [
+    { q: `¿Cuál es la nota de corte más alta de ${g.name} en ${D.year}?`, a: `${nota(hi.n)} puntos, en ${hi.u} (${hi.c}).` },
+    { q: `¿Y la más baja?`, a: `${nota(lo.n)} puntos, en ${lo.u} (${lo.c}). La mediana de las ${g.unis.length} universidades es ${nota(g.mediana)}.` },
+    { q: `¿En cuántas universidades se imparte ${g.name}?`, a: `La app recoge ${g.unis.length} universidades y centros con nota de corte de ${D.year} para ${g.name}.` },
+  ]
+  if (g.conPrev >= 2 && g.delta !== null) {
+    out.push({
+      q: `¿Sube o baja la nota de corte de ${g.name} respecto a ${D.year - 1}?`,
+      a: `De media ${g.delta >= 0 ? 'sube' : 'baja'} ${nota(Math.abs(g.delta))} puntos respecto a ${D.year - 1}, calculado en ${g.conPrev} universidades con datos de ambos años.`,
+    })
+  }
+  return out
+}
+
+function GradoPage({ g }) {
+  const hi = g.unis[0]
+  const lo = g.unis[g.unis.length - 1]
+  const faq = gradoFaq(g)
+  return (
+    <Shell>
+      <div className="mx-auto max-w-4xl px-4 py-14 sm:px-6 lg:py-20">
+        <Crumbs items={[['Inicio', href('')], ['Notas de corte', href('notas-de-corte/')], ['Titulaciones', href('notas-de-corte/titulaciones/')], [g.name]]} />
+        <h1 className="mt-6 text-4xl font-extrabold leading-tight sm:text-5xl">Nota de corte de {g.name} en {D.year}</h1>
+        <p className="mt-5 max-w-2xl text-lg text-muted">
+          {g.name} se imparte en {g.unis.length} universidades y centros con nota de corte en {D.year}. La más alta es {nota(hi.n)} ({hi.u}) y la más baja, {nota(lo.n)} ({lo.u}). La mediana es {nota(g.mediana)} sobre 14.
+        </p>
+        <h2 className="mt-12 text-2xl font-bold">Nota de corte por universidad</h2>
+        <ol className="mt-5 grid gap-x-10 gap-y-5 sm:grid-cols-2">
+          {g.unis.map((x) => (
+            <li key={x.u} className="flex items-start justify-between gap-4">
+              <div>
+                <p className="font-semibold leading-snug">{x.u}</p>
+                <p className="text-[15px] text-muted">{x.c}</p>
+              </div>
+              <div className="text-right">
+                <p className="font-display text-xl font-bold tabular-nums text-accent">{nota(x.n)}</p>
+                {x.d !== null && <p className="whitespace-nowrap text-[13px] tabular-nums text-muted">{delta(x.d)} vs {D.year - 1}</p>}
+              </div>
+            </li>
+          ))}
+        </ol>
+        <div className="panel mt-14 flex flex-wrap items-center justify-between gap-5 bg-tint p-7">
+          <div>
+            <p className="font-display text-2xl font-bold">¿Con tu nota, entras en {g.name.replace(/^Grado en /, '')}?</p>
+            <p className="mt-1 text-muted">Simula tu nota con las {fmt(D.totalEntradas)} notas de la app.</p>
+          </div>
+          <StoreButton />
+        </div>
+        <Faq items={faq} id="preguntas" title="Datos clave" />
+        <p className="text-[15px] text-muted">
+          Notas de corte de {D.year} recopiladas de fuentes públicas y actualizadas el {fechaLarga}. Confirma siempre la información en la web oficial de la universidad.
+        </p>
+      </div>
+    </Shell>
+  )
+}
+
+function GradosIndex({ grados }) {
+  const byRama = D.ramas.map((r) => [r, grados.filter((g) => g.rama === r.name)]).filter(([, l]) => l.length)
+  return (
+    <Shell>
+      <div className="mx-auto max-w-4xl px-4 py-14 sm:px-6 lg:py-20">
+        <Crumbs items={[['Inicio', href('')], ['Notas de corte', href('notas-de-corte/')], ['Titulaciones']]} />
+        <h1 className="mt-6 text-4xl font-extrabold leading-tight sm:text-5xl">Notas de corte {D.year} por titulación</h1>
+        <p className="mt-5 max-w-2xl text-lg text-muted">
+          {grados.length} titulaciones que se imparten en dos o más universidades, con la nota de corte de cada una. Actualizado el {fechaLarga}.
+        </p>
+        {byRama.map(([r, l]) => (
+          <section key={r.slug}>
+            <h2 className="mt-12 text-2xl font-bold">{r.name}</h2>
+            <ul className="mt-3 grid gap-x-8 sm:grid-cols-2">
+              {l.map((g) => (
+                <li key={g.slug}>
+                  <a href={href(`notas-de-corte/titulacion/${g.slug}/`)} className="flex items-baseline justify-between gap-4 py-1.5 hover:text-accent">
+                    <span className="font-medium leading-snug">{g.name}</span>
+                    <span className="shrink-0 text-[15px] text-muted">{g.unis.length}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))}
+      </div>
+      <FinalCta />
+    </Shell>
+  )
+}
+
 /* ---------- rutas, head, JSON-LD ---------- */
 
-export const allPaths = () => [
+export const allPaths = (grados = []) => [
   '',
   'notas-de-corte/',
+  ...(grados.length ? ['notas-de-corte/titulaciones/', ...grados.map((g) => `notas-de-corte/titulacion/${g.slug}/`)] : []),
   ...D.comunidadesList.map((c) => `notas-de-corte/${c.slug}/`),
   ...D.ramas.map((c) => `notas-de-corte/${c.slug}/`),
 ]
 
-export function routeFor(path) {
+// grados solo llega en el prerender: esas páginas son HTML estático y no se hidratan.
+export function routeFor(path, grados) {
   const p = path.replace(/^\//, '')
   if (p === '' || p === 'index.html') return <Home />
   if (p === 'notas-de-corte/' || p === 'notas-de-corte') return <Hub />
+  if (/^notas-de-corte\/titulaciones\/?$/.test(p)) return grados ? <GradosIndex grados={grados} /> : null
+  const gm = p.match(/^notas-de-corte\/titulacion\/([^/]+)\/?$/)
+  if (gm) {
+    const g = grados && grados.find((x) => x.slug === gm[1])
+    return g ? <GradoPage g={g} /> : null
+  }
   const m = p.match(/^notas-de-corte\/([^/]+)\/?$/)
   if (m && dataItem(m[1])) return <DataPage slug={m[1]} />
-  return <Home />
+  return grados ? <Home /> : null
 }
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;')
@@ -488,14 +595,14 @@ const faqLd = (items) => ({
   mainEntity: items.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
 })
 
-export function headFor(path) {
+export function headFor(path, grados = []) {
   const p = path.replace(/^\//, '')
   const url = `${SITE}/${p}`
   let title, desc, graph
 
   if (p === '') {
     title = 'Notas PAU: notas de corte 2026 y simulador de nota'
-    desc = `App gratis para iPhone con ${fmt(stats.y2026)} notas de corte de 2026 y ${fmt(stats.y2025)} de 2025. Busca tu carrera, simula tu nota de acceso y compara con el año anterior.`
+    desc = `App gratis para iPhone con ${fmt(stats.y2026)} notas de corte de 2026 y ${fmt(stats.y2025)} de 2025. Busca tu carrera, simula tu nota y compara con 2025.`
     graph = [
       org,
       { '@type': 'WebSite', '@id': `${SITE}/#web`, url: `${SITE}/`, name: 'Notas PAU', inLanguage: 'es-ES', publisher: { '@id': `${SITE}/#org` } },
@@ -526,8 +633,8 @@ export function headFor(path) {
       faqLd(FAQ),
     ]
   } else if (p === 'notas-de-corte/') {
-    title = `Notas de corte ${D.year} por comunidad y rama | Notas PAU`
-    desc = `Resumen de las notas de corte de ${D.year} por comunidad autónoma y rama de conocimiento: titulaciones, nota máxima y mediana. Actualizado el ${fechaLarga}.`
+    title = brand(`Notas de corte ${D.year} por comunidad y rama`)
+    desc = `Notas de corte ${D.year} por comunidad autónoma y rama de conocimiento: titulaciones, nota máxima y mediana. Actualizado el ${fechaLarga}.`
     graph = [
       org,
       {
@@ -538,10 +645,47 @@ export function headFor(path) {
         ],
       },
     ]
+  } else if (p === 'notas-de-corte/titulaciones/') {
+    title = brand(`Notas de corte ${D.year} por titulación`)
+    desc = cut(`${grados.length} titulaciones con la nota de corte ${D.year} en cada universidad: Medicina, Derecho, Enfermería, Ingenierías y más. Actualizado el ${fechaLarga}.`)
+    graph = [
+      org,
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Inicio', item: `${SITE}/` },
+          { '@type': 'ListItem', position: 2, name: 'Notas de corte', item: `${SITE}/notas-de-corte/` },
+          { '@type': 'ListItem', position: 3, name: 'Titulaciones', item: url },
+        ],
+      },
+    ]
+  } else if (p.startsWith('notas-de-corte/titulacion/')) {
+    const g = grados.find((x) => x.slug === p.split('/')[2])
+    const hi = g.unis[0]
+    title = cut(brand(`${g.name}: nota de corte ${D.year}`), 90)
+    desc = cut(`Nota de corte de ${g.name} en ${D.year}: máxima ${nota(hi.n)} (${hi.u}), mediana ${nota(g.mediana)}. Comparativa de ${g.unis.length} universidades.`)
+    graph = [
+      org,
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Inicio', item: `${SITE}/` },
+          { '@type': 'ListItem', position: 2, name: 'Notas de corte', item: `${SITE}/notas-de-corte/` },
+          { '@type': 'ListItem', position: 3, name: 'Titulaciones', item: `${SITE}/notas-de-corte/titulaciones/` },
+          { '@type': 'ListItem', position: 4, name: g.name, item: url },
+        ],
+      },
+      {
+        '@type': 'ItemList',
+        name: `Nota de corte ${D.year} de ${g.name} por universidad`,
+        itemListElement: g.unis.map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: `${x.u} (${x.c}): ${nota(x.n)}` })),
+      },
+      faqLd(gradoFaq(g)),
+    ]
   } else {
     const x = dataItem(p.split('/')[1])
-    title = `Notas de corte ${D.year} en ${x.name} | Notas PAU`
-    desc = `${fmt(x.titulaciones)} titulaciones con nota de corte ${D.year} en ${x.name}. Nota más alta ${nota(x.max)} (${x.top[0].carrera}, ${x.top[0].universidad}); mediana ${nota(x.mediana)}.`
+    title = brand(`Notas de corte ${D.year} en ${x.name}`)
+    desc = cut(`${fmt(x.titulaciones)} titulaciones con nota de corte ${D.year} en ${x.name}. Máxima ${nota(x.max)} (${x.top[0].carrera}, ${x.top[0].universidad}); mediana ${nota(x.mediana)}.`)
     graph = [
       org,
       {

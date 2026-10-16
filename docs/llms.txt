@@ -10,6 +10,7 @@ Cifras: 8605 notas de corte, 2011 titulaciones, 220 universidades y centros (pú
 ## Páginas
 - [Inicio](https://albeasystems.github.io/notaspau/): qué hace la app, precio y preguntas frecuentes.
 - [Notas de corte por comunidad y rama](https://albeasystems.github.io/notaspau/notas-de-corte/): resumen con nota máxima y mediana de 2026.
+- [Notas de corte por titulación](https://albeasystems.github.io/notaspau/notas-de-corte/titulaciones/): 222 titulaciones comparadas entre universidades.
 - [Notas de corte 2026 en Comunidad de Madrid](https://albeasystems.github.io/notaspau/notas-de-corte/comunidad-de-madrid/)
 - [Notas de corte 2026 en Cataluña](https://albeasystems.github.io/notaspau/notas-de-corte/cataluna/)
 - [Notas de corte 2026 en Andalucía](https://albeasystems.github.io/notaspau/notas-de-corte/andalucia/)
