@@ -570,7 +570,7 @@ export function headFor(path) {
     `<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />`,
     `<meta name="theme-color" content="#f4f6fa" media="(prefers-color-scheme: light)" />`,
     `<meta name="theme-color" content="#090e19" media="(prefers-color-scheme: dark)" />`,
-    `<meta name="apple-itunes-app" content="app-id=6743827730" />`,
+    `<meta name="apple-itunes-app" content="app-id=6761384675" />`,
     `<meta property="og:type" content="website" />`,
     `<meta property="og:locale" content="es_ES" />`,
     `<meta property="og:site_name" content="Notas PAU" />`,

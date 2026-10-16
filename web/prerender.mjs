@@ -54,7 +54,7 @@ fs.writeFileSync(
 Cifras: ${data.totalEntradas} notas de corte, ${data.titulaciones} titulaciones, ${data.universidades} universidades y centros (públicos y privados). Sin registro. Gratis con anuncios; pago único de 2,99 EUR para quitarlos.
 
 ## Descarga
-- [Notas PAU en App Store](https://apps.apple.com/es/app/notas-pau/id6743827730): descarga oficial.
+- [Notas PAU en App Store](https://apps.apple.com/es/app/notaspau-acceso-universidad/id6761384675): descarga oficial.
 
 ## Páginas
 - [Inicio](${SITE}/): qué hace la app, precio y preguntas frecuentes.
@@ -76,7 +76,7 @@ const section = (x) =>
   `### ${x.name}\n- ${x.titulaciones} titulaciones, ${x.universidades} universidades y centros. Nota máxima ${c3(x.max)}; mediana ${c3(x.mediana)}.\n- Notas más altas:\n${top(x)}\n- ${SITE}/notas-de-corte/${x.slug}/\n`
 fs.writeFileSync(
   path.join(out, 'llms-full.txt'),
-  `# Notas PAU: contenido completo\n\nApp gratuita para iPhone con notas de corte universitarias de España (2025 y 2026). Editor: Albea Systems (albeasystems@gmail.com). Descarga: https://apps.apple.com/es/app/notas-pau/id6743827730. Datos actualizados el ${data.actualizado}. Fuente: recopilación de fuentes públicas; no afiliada a universidades ni al Ministerio.\n\n## Preguntas frecuentes\n\n` +
+  `# Notas PAU: contenido completo\n\nApp gratuita para iPhone con notas de corte universitarias de España (2025 y 2026). Editor: Albea Systems (albeasystems@gmail.com). Descarga: https://apps.apple.com/es/app/notaspau-acceso-universidad/id6761384675. Datos actualizados el ${data.actualizado}. Fuente: recopilación de fuentes públicas; no afiliada a universidades ni al Ministerio.\n\n## Preguntas frecuentes\n\n` +
     FAQ.map((f) => `### ${f.q}\n${f.a}\n`).join('\n') +
     `\n## Notas de corte ${data.year} por comunidad\n\n${data.comunidadesList.map(section).join('\n')}\n## Notas de corte ${data.year} por rama\n\n${data.ramas.map(section).join('\n')}`,
 )

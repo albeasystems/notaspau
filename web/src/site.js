@@ -2,7 +2,7 @@ import data from './seo-data.json'
 
 export const SITE = import.meta.env.VITE_SITE_URL || 'https://albeasystems.github.io/notaspau'
 export const BASE = import.meta.env.BASE_URL
-export const STORE = 'https://apps.apple.com/es/app/notas-pau/id6743827730'
+export const STORE = 'https://apps.apple.com/es/app/notaspau-acceso-universidad/id6761384675'
 export const EMAIL = 'albeasystems@gmail.com'
 export const OG = `${SITE}/images/og.png`
 

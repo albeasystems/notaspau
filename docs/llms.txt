@@ -5,7 +5,7 @@
 Cifras: 8605 notas de corte, 2011 titulaciones, 220 universidades y centros (públicos y privados). Sin registro. Gratis con anuncios; pago único de 2,99 EUR para quitarlos.
 
 ## Descarga
-- [Notas PAU en App Store](https://apps.apple.com/es/app/notas-pau/id6743827730): descarga oficial.
+- [Notas PAU en App Store](https://apps.apple.com/es/app/notaspau-acceso-universidad/id6761384675): descarga oficial.
 
 ## Páginas
 - [Inicio](https://albeasystems.github.io/notaspau/): qué hace la app, precio y preguntas frecuentes.
