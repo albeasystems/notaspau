@@ -64,9 +64,9 @@ function Hero() {
       <div className="rise mx-auto w-[min(70vw,290px)] lg:mx-0 lg:ml-auto" style={{ '--i': 3 }}>
         <Phone>
           <picture>
-            <source media="(prefers-reduced-motion: reduce)" srcSet={img('journey-poster.jpg')} />
+            <source media="(prefers-reduced-motion: reduce)" srcSet={img('journey-402x874.jpg')} />
             <img
-              src={img('journey.gif')}
+              src={img('journey-402x874.gif')}
               width="402"
               height="874"
               alt="Recorrido en la app Notas PAU: buscar Medicina, abrir la ficha con la comparativa 2025-2026, guardarla en favoritos y probar el simulador de nota."
