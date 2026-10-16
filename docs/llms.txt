@@ -1,0 +1,42 @@
+# Notas PAU
+
+> App gratuita para iPhone (iOS 17+) con las notas de corte universitarias de España de 2025 y 2026: buscador, simulador de nota de acceso, favoritos y comparativa interanual. Editada por Albea Systems. Datos actualizados el 2026-09-27.
+
+Cifras: 8605 notas de corte, 2011 titulaciones, 220 universidades y centros (públicos y privados). Sin registro. Gratis con anuncios; pago único de 2,99 EUR para quitarlos.
+
+## Descarga
+- [Notas PAU en App Store](https://apps.apple.com/es/app/notas-pau/id6743827730): descarga oficial.
+
+## Páginas
+- [Inicio](https://albeasystems.github.io/notaspau/): qué hace la app, precio y preguntas frecuentes.
+- [Notas de corte por comunidad y rama](https://albeasystems.github.io/notaspau/notas-de-corte/): resumen con nota máxima y mediana de 2026.
+- [Notas de corte 2026 en Comunidad de Madrid](https://albeasystems.github.io/notaspau/notas-de-corte/comunidad-de-madrid/)
+- [Notas de corte 2026 en Cataluña](https://albeasystems.github.io/notaspau/notas-de-corte/cataluna/)
+- [Notas de corte 2026 en Andalucía](https://albeasystems.github.io/notaspau/notas-de-corte/andalucia/)
+- [Notas de corte 2026 en Comunitat Valenciana](https://albeasystems.github.io/notaspau/notas-de-corte/comunitat-valenciana/)
+- [Notas de corte 2026 en Castilla y León](https://albeasystems.github.io/notaspau/notas-de-corte/castilla-y-leon/)
+- [Notas de corte 2026 en Galicia](https://albeasystems.github.io/notaspau/notas-de-corte/galicia/)
+- [Notas de corte 2026 en Región de Murcia](https://albeasystems.github.io/notaspau/notas-de-corte/region-de-murcia/)
+- [Notas de corte 2026 en Canarias](https://albeasystems.github.io/notaspau/notas-de-corte/canarias/)
+- [Notas de corte 2026 en Asturias](https://albeasystems.github.io/notaspau/notas-de-corte/asturias/)
+- [Notas de corte 2026 en Extremadura](https://albeasystems.github.io/notaspau/notas-de-corte/extremadura/)
+- [Notas de corte 2026 en Aragón](https://albeasystems.github.io/notaspau/notas-de-corte/aragon/)
+- [Notas de corte 2026 en Castilla-La Mancha](https://albeasystems.github.io/notaspau/notas-de-corte/castilla-la-mancha/)
+- [Notas de corte 2026 en Islas Baleares](https://albeasystems.github.io/notaspau/notas-de-corte/islas-baleares/)
+- [Notas de corte 2026 en Navarra](https://albeasystems.github.io/notaspau/notas-de-corte/navarra/)
+- [Notas de corte 2026 en Cantabria](https://albeasystems.github.io/notaspau/notas-de-corte/cantabria/)
+- [Notas de corte 2026 en La Rioja](https://albeasystems.github.io/notaspau/notas-de-corte/la-rioja/)
+- [Notas de corte 2026 en Ceuta y Melilla](https://albeasystems.github.io/notaspau/notas-de-corte/ceuta-y-melilla/)
+- [Notas de corte 2026: Ingeniería y Arquitectura](https://albeasystems.github.io/notaspau/notas-de-corte/ingenieria-y-arquitectura/)
+- [Notas de corte 2026: Ciencias Sociales y Jurídicas](https://albeasystems.github.io/notaspau/notas-de-corte/ciencias-sociales-y-juridicas/)
+- [Notas de corte 2026: Arte y Humanidades](https://albeasystems.github.io/notaspau/notas-de-corte/arte-y-humanidades/)
+- [Notas de corte 2026: Ciencias](https://albeasystems.github.io/notaspau/notas-de-corte/ciencias/)
+- [Notas de corte 2026: Ciencias de la Salud](https://albeasystems.github.io/notaspau/notas-de-corte/ciencias-de-la-salud/)
+
+## Soporte y legal
+- [Soporte](https://albeasystems.github.io/notaspau/support.html)
+- [Privacidad](https://albeasystems.github.io/notaspau/privacy.html)
+- [Términos](https://albeasystems.github.io/notaspau/terms.html)
+
+## Optional
+- [Contenido completo en Markdown](https://albeasystems.github.io/notaspau/llms-full.txt)

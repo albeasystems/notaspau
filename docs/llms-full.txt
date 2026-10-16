@@ -1,0 +1,254 @@
+# Notas PAU: contenido completo
+
+App gratuita para iPhone con notas de corte universitarias de España (2025 y 2026). Editor: Albea Systems (albeasystems@gmail.com). Descarga: https://apps.apple.com/es/app/notas-pau/id6743827730. Datos actualizados el 2026-09-27. Fuente: recopilación de fuentes públicas; no afiliada a universidades ni al Ministerio.
+
+## Preguntas frecuentes
+
+### ¿Qué es la nota de corte?
+La nota de corte es la nota de admisión del último estudiante admitido en una titulación. Cambia cada año según las plazas y la demanda. Notas PAU recopila la de 2025 y la de 2026 para que veas si una carrera sube o baja.
+
+### ¿Cómo se calcula la nota de admisión?
+La nota de admisión suma el 60 % de la nota media de Bachillerato o FP, el 40 % de la calificación de la fase de acceso y hasta 4 puntos de las materias de la fase voluntaria, ponderadas según la titulación. El máximo es 14 puntos.
+
+### ¿Qué datos incluye Notas PAU?
+Incluye 8.605 notas de corte de 2025 y 2026, 2.011 titulaciones distintas y 220 universidades y centros, públicos y privados, de toda España. La última actualización es del 27 de septiembre de 2026.
+
+### ¿Cómo funciona el simulador de nota?
+Introduces tu nota de acceso entre 5 y 14 y la app clasifica las titulaciones en cuatro grupos: accedes, accedes justo, muy cerca y fuera. Puedes filtrar por universidad pública o privada, comunidad y rama.
+
+### ¿Notas PAU es gratis?
+Sí. Todas las funciones son gratuitas, con anuncios. Si prefieres quitarlos, hay un pago único de 2,99 € sin suscripción ni renovación automática.
+
+### ¿Necesito registrarme?
+No. No hay cuenta ni registro. Abres la app y buscas.
+
+### ¿De dónde salen los datos?
+Se recopilan de fuentes públicas de universidades y portales de acceso. Notas PAU no está afiliada a ninguna universidad ni al Ministerio. Cada ficha enlaza a la página oficial para que confirmes la información antes de decidir.
+
+### ¿Hay versión para Android?
+Por ahora solo para iPhone, con iOS 17 o superior.
+
+### He pagado para quitar los anuncios y siguen apareciendo. ¿Qué hago?
+Abre Ajustes en la app y pulsa Restaurar compra. Usa el mismo Apple ID con el que compraste. Si sigue igual, escríbenos a albeasystems@gmail.com.
+
+## Notas de corte 2026 por comunidad
+
+### Comunidad de Madrid
+- 274 titulaciones, 8 universidades y centros. Nota máxima 13,715; mediana 10,350.
+- Notas más altas:
+  - Doble Grado en Matemáticas + Física (Universidad Complutense de Madrid): 13,715
+  - Grado en Ingeniería de Tecnologías Industriales + Máster Universitario en Ingeniería Industrial (Programa de Ingeniero/a Industrial) (Universidad Politécnica de Madrid): 13,526
+  - Grado en Ingeniería en Tecnologías Industriales + Máster en Ingeniería Industrial (Universidad Carlos III de Madrid): 13,503
+  - Grado en Ingeniería de Tecnologías Aeroespaciales + Máster Universitario en Ingeniería Aeronáutica (Programa de Ingeniero Aeronáutico) (Universidad Politécnica de Madrid): 13,468
+  - Doble Grado en Ingeniería Física + Ingeniería en Tecnologías Industriales (Universidad Carlos III de Madrid): 13,450
+- https://albeasystems.github.io/notaspau/notas-de-corte/comunidad-de-madrid/
+
+### Cataluña
+- 230 titulaciones, 16 universidades y centros. Nota máxima 12,972; mediana 9,060.
+- Notas más altas:
+  - Doble Grado en Derecho + Relaciones Internacionales (Universitat Autònoma de Barcelona): 12,972
+  - Doble Grado en Física + Matemáticas (Universitat Autònoma de Barcelona): 12,924
+  - Doble Grado en Física + Matemáticas (Universitat de Barcelona): 12,812
+  - Grado en Ingeniería en Tecnologías Aeroespaciales + Máster Universitario en Ingeniería Aeronáutica (Programa Ingeniero/a Aeronáutico/a) (Universitat Politècnica de Catalunya): 12,694
+  - Grado en Medicina (Universitat de Barcelona): 12,685
+- https://albeasystems.github.io/notaspau/notas-de-corte/cataluna/
+
+### Andalucía
+- 189 titulaciones, 10 universidades y centros. Nota máxima 13,625; mediana 9,700.
+- Notas más altas:
+  - Doble Grado en Matemáticas + Física (Universidad de Granada): 13,625
+  - Doble Grado en Física + Matemáticas (Universidad de Sevilla): 13,594
+  - Grado en Biomedicina Básica y Experimental (Universidad de Sevilla): 13,345
+  - Grado en Ingeniería Aeroespacial (con reserva plaza Máster) (Universidad de Sevilla): 13,340
+  - Doble Grado en Relaciones Internacionales + Derecho (Universidad Pablo de Olavide): 13,336
+- https://albeasystems.github.io/notaspau/notas-de-corte/andalucia/
+
+### Comunitat Valenciana
+- 158 titulaciones, 5 universidades y centros. Nota máxima 13,504; mediana 9,690.
+- Notas más altas:
+  - Grado en Ingeniería Aeroespacial (con reserva plaza Máster) (Universitat Politècnica de València): 13,504
+  - Doble Grado en Matemáticas + Ingeniería Informática (Universitat Politècnica de València): 13,500
+  - Doble Grado en Física + Matemáticas (Universitat de València): 13,441
+  - Grado en Ingeniería Aeroespacial (Universitat Politècnica de València): 13,275
+  - Grado en Medicina (Universidad de Alicante): 13,172
+- https://albeasystems.github.io/notaspau/notas-de-corte/comunitat-valenciana/
+
+### Castilla y León
+- 120 titulaciones, 7 universidades y centros. Nota máxima 13,386; mediana 8,100.
+- Notas más altas:
+  - Doble Grado en Física + Matemáticas (Universidad de Salamanca): 13,386
+  - Doble Grado en Biotecnología + Farmacia (Universidad de Salamanca): 13,350
+  - Doble Grado en Traducción e Interpretación + Derecho (Universidad de Salamanca): 13,328
+  - Doble Grado en Física + Matemáticas (Universidad de Valladolid): 13,060
+  - Grado en Medicina (Universidad de Salamanca): 12,950
+- https://albeasystems.github.io/notaspau/notas-de-corte/castilla-y-leon/
+
+### Galicia
+- 114 titulaciones, 8 universidades y centros. Nota máxima 13,449; mediana 9,180.
+- Notas más altas:
+  - Doble Grado en Matemáticas + Física (Universidade de Santiago de Compostela): 13,449
+  - Doble Grado en Ingeniería Informática + Matemáticas (Universidade de Santiago de Compostela): 13,046
+  - Grado en Ingeniería Aeroespacial (con reserva plaza Máster) (Universidade de Vigo): 13,010
+  - Grado en Medicina (Universidade de Santiago de Compostela): 12,844
+  - Grado en Odontología (Universidade de Santiago de Compostela): 12,815
+- https://albeasystems.github.io/notaspau/notas-de-corte/galicia/
+
+### Región de Murcia
+- 76 titulaciones, 2 universidades y centros. Nota máxima 13,475; mediana 10,010.
+- Notas más altas:
+  - Doble Grado en Matemáticas + Física (Universidad de Murcia): 13,475
+  - Grado en Medicina (Universidad de Murcia): 13,311
+  - Grado en Odontología (Universidad de Murcia): 13,132
+  - Doble Grado en Ingeniería Mecánica + Ingeniería en Diseño Industrial y Desarrollo de Producto (Universidad Politécnica de Cartagena): 12,853
+  - Grado en Farmacia (Universidad de Murcia): 12,776
+- https://albeasystems.github.io/notaspau/notas-de-corte/region-de-murcia/
+
+### Canarias
+- 68 titulaciones, 2 universidades y centros. Nota máxima 13,395; mediana 9,410.
+- Notas más altas:
+  - Doble Grado en Traducción e Interpretación: en Inglés-Alemán + Inglés-Francés (Universidad de Las Palmas de Gran Canaria): 13,395
+  - Grado en Medicina (Universidad de La Laguna): 12,910
+  - Grado en Enfermería (Universidad de La Laguna): 12,341
+  - Doble Grado en Bellas Artes + Diseño (Universidad de La Laguna): 12,323
+  - Grado en Medicina (Universidad de Las Palmas de Gran Canaria): 12,176
+- https://albeasystems.github.io/notaspau/notas-de-corte/canarias/
+
+### Asturias
+- 62 titulaciones, 2 universidades y centros. Nota máxima 13,556; mediana 8,830.
+- Notas más altas:
+  - Doble Grado en Ingeniería en Tecnologías y Servicios de Telecomunicación + Ciencia e Ingeniería de Datos (Universidad de Oviedo): 13,556
+  - Doble Grado en Ingeniería Informática del Software + Matemáticas (Universidad de Oviedo): 13,300
+  - Doble Grado en Ingeniería Informática en Tecnologías de la Información + Ciencia e Ingeniería de Datos (Universidad de Oviedo): 13,228
+  - Grado en Medicina (Universidad de Oviedo): 13,050
+  - Grado en Odontología (Universidad de Oviedo): 12,948
+- https://albeasystems.github.io/notaspau/notas-de-corte/asturias/
+
+### Extremadura
+- 49 titulaciones, 2 universidades y centros. Nota máxima 13,330; mediana 10,080.
+- Notas más altas:
+  - Grado en Medicina (Universidad de Extremadura): 13,330
+  - Grado en Fisioterapia (Universidad de Extremadura): 12,603
+  - Grado en Psicología (Universidad de Extremadura): 12,553
+  - Grado en Biotecnología (Universidad de Extremadura): 12,550
+  - Grado en Enfermería (Universidad de Extremadura): 12,418
+- https://albeasystems.github.io/notaspau/notas-de-corte/extremadura/
+
+### Aragón
+- 49 titulaciones, 4 universidades y centros. Nota máxima 12,904; mediana 9,580.
+- Notas más altas:
+  - Grado en Medicina (Universidad de Zaragoza): 12,904
+  - Doble Grado en Matemáticas + Ingeniería Informática (Universidad de Zaragoza): 12,808
+  - Grado en Odontología (Universidad de Zaragoza): 12,690
+  - Grado en Biotecnología (Universidad de Zaragoza): 12,233
+  - Grado en Ingeniería Biomédica (Universidad de Zaragoza): 12,180
+- https://albeasystems.github.io/notaspau/notas-de-corte/aragon/
+
+### Castilla-La Mancha
+- 39 titulaciones, 2 universidades y centros. Nota máxima 13,049; mediana 9,610.
+- Notas más altas:
+  - Grado en Medicina (Universidad de Castilla - La Mancha): 13,049
+  - Doble Grado en Derecho + Estudios Internacionales (Universidad de Castilla - La Mancha): 12,307
+  - Grado en Ingeniería Aeroespacial (Universidad de Castilla - La Mancha): 12,261
+  - Grado en Enfermería (Universidad de Castilla - La Mancha): 11,836
+  - Doble Grado en ADE + Estudios Internacionales (Universidad de Castilla - La Mancha): 11,675
+- https://albeasystems.github.io/notaspau/notas-de-corte/castilla-la-mancha/
+
+### Islas Baleares
+- 36 titulaciones, 3 universidades y centros. Nota máxima 12,720; mediana 8,670.
+- Notas más altas:
+  - Grado en Medicina (Universitat de les Illes Balears): 12,720
+  - Grado en Farmacia (Universitat de les Illes Balears): 11,716
+  - Grado en Enfermería (Universitat de les Illes Balears): 11,490
+  - Grado en Bioquímica (Universitat de les Illes Balears): 10,776
+  - Doble Grado en Maestro de Educación Infantil + Maestro de Educación Primaria (Universitat de les Illes Balears): 10,714
+- https://albeasystems.github.io/notaspau/notas-de-corte/islas-baleares/
+
+### Navarra
+- 35 titulaciones, 1 universidades y centros. Nota máxima 12,902; mediana 10,030.
+- Notas más altas:
+  - Grado en Medicina (Universidad Pública de Navarra): 12,902
+  - Doble Grado en Ciencia de Datos + Biotecnología (Universidad Pública de Navarra): 12,284
+  - Doble Grado en Ingeniería en Tecnologías de Telecomunicación + Ingeniería Biomédica (Universidad Pública de Navarra): 12,216
+  - Doble Grado en Ciencia de Datos + ADE (Universidad Pública de Navarra): 11,997
+  - Doble Grado en Maestro en Educación Infantil + Maestro en Educación Primaria (Programa Internacional) (Universidad Pública de Navarra): 11,878
+- https://albeasystems.github.io/notaspau/notas-de-corte/navarra/
+
+### Cantabria
+- 20 titulaciones, 2 universidades y centros. Nota máxima 12,852; mediana 9,100.
+- Notas más altas:
+  - Grado en Medicina (Universidad de Cantabria): 12,852
+  - Doble Grado en Física + Matemáticas (Universidad de Cantabria): 12,408
+  - Grado en Ciencias Biomédicas (Universidad de Cantabria): 12,342
+  - Grado en Enfermería (Universidad de Cantabria): 11,911
+  - Grado en Ingeniería Civil (Itinerario Bilingüe Internacional) (Universidad de Cantabria): 11,838
+- https://albeasystems.github.io/notaspau/notas-de-corte/cantabria/
+
+### La Rioja
+- 19 titulaciones, 1 universidades y centros. Nota máxima 11,812; mediana 7,050.
+- Notas más altas:
+  - Grado en Matemáticas (Universidad de La Rioja): 11,812
+  - Grado en Enfermería (Universidad de La Rioja): 11,636
+  - Grado en Derecho (Universidad de La Rioja): 9,529
+  - Grado en Química (Universidad de La Rioja): 9,084
+  - Grado en Educación Primaria (Universidad de La Rioja): 8,656
+- https://albeasystems.github.io/notaspau/notas-de-corte/la-rioja/
+
+### Ceuta y Melilla
+- 3 titulaciones, 1 universidades y centros. Nota máxima 11,290; mediana 11,220.
+- Notas más altas:
+  - Grado en Enfermería (Universidad de Granada): 11,290
+  - Grado en Fisioterapia (Universidad de Granada): 10,985
+  - Doble Grado en Educación Primaria + Ciencias de la Actividad Física y del Deporte (Universidad de Granada): 8,824
+- https://albeasystems.github.io/notaspau/notas-de-corte/ceuta-y-melilla/
+
+## Notas de corte 2026 por rama
+
+### Ingeniería y Arquitectura
+- 292 titulaciones, 50 universidades y centros. Nota máxima 13,556; mediana 9,470.
+- Notas más altas:
+  - Doble Grado en Ingeniería en Tecnologías y Servicios de Telecomunicación + Ciencia e Ingeniería de Datos (Universidad de Oviedo): 13,556
+  - Grado en Ingeniería de Tecnologías Industriales + Máster Universitario en Ingeniería Industrial (Programa de Ingeniero/a Industrial) (Universidad Politécnica de Madrid): 13,526
+  - Grado en Ingeniería Aeroespacial (con reserva plaza Máster) (Universitat Politècnica de València): 13,504
+  - Grado en Ingeniería en Tecnologías Industriales + Máster en Ingeniería Industrial (Universidad Carlos III de Madrid): 13,503
+  - Doble Grado en Matemáticas + Ingeniería Informática (Universitat Politècnica de València): 13,500
+- https://albeasystems.github.io/notaspau/notas-de-corte/ingenieria-y-arquitectura/
+
+### Ciencias Sociales y Jurídicas
+- 291 titulaciones, 55 universidades y centros. Nota máxima 13,336; mediana 8,940.
+- Notas más altas:
+  - Doble Grado en Relaciones Internacionales + Derecho (Universidad Pablo de Olavide): 13,336
+  - Doble Grado en Estudios Internacionales + Derecho (Universidad Carlos III de Madrid): 13,175
+  - Doble Grado en Derecho + Relaciones Internacionales (Universidad Rey Juan Carlos): 13,114
+  - Grado en Neurociencia (Universidad Carlos III de Madrid): 13,043
+  - Doble Grado en Estudios Internacionales + ADE (Universidad Carlos III de Madrid): 13,010
+- https://albeasystems.github.io/notaspau/notas-de-corte/ciencias-sociales-y-juridicas/
+
+### Arte y Humanidades
+- 91 titulaciones, 37 universidades y centros. Nota máxima 13,395; mediana 7,730.
+- Notas más altas:
+  - Doble Grado en Traducción e Interpretación: en Inglés-Alemán + Inglés-Francés (Universidad de Las Palmas de Gran Canaria): 13,395
+  - Doble Grado en Traducción e Interpretación + Derecho (Universidad de Salamanca): 13,328
+  - Doble Grado en Historia + Estudios Internacionales (Universidad Autónoma de Madrid): 13,142
+  - Doble Grado en Estudios Ingleses + Filología Hispánica (Universidad de Granada): 12,638
+  - Doble Grado en Filología Clásica + Estudios Ingleses (Universidad de Cádiz): 12,541
+- https://albeasystems.github.io/notaspau/notas-de-corte/arte-y-humanidades/
+
+### Ciencias
+- 59 titulaciones, 46 universidades y centros. Nota máxima 13,715; mediana 10,830.
+- Notas más altas:
+  - Doble Grado en Matemáticas + Física (Universidad Complutense de Madrid): 13,715
+  - Doble Grado en Matemáticas + Física (Universidad de Granada): 13,625
+  - Doble Grado en Física + Matemáticas (Universidad de Sevilla): 13,594
+  - Doble Grado en Matemáticas + Física (Universidad de Murcia): 13,475
+  - Doble Grado en Matemáticas + Física (Universidade de Santiago de Compostela): 13,449
+- https://albeasystems.github.io/notaspau/notas-de-corte/ciencias/
+
+### Ciencias de la Salud
+- 34 titulaciones, 58 universidades y centros. Nota máxima 13,350; mediana 11,400.
+- Notas más altas:
+  - Doble Grado en Biotecnología + Farmacia (Universidad de Salamanca): 13,350
+  - Grado en Biomedicina Básica y Experimental (Universidad de Sevilla): 13,345
+  - Grado en Medicina (Universidad de Extremadura): 13,330
+  - Grado en Medicina (Universidad de Sevilla): 13,320
+  - Grado en Medicina (Universidad de Murcia): 13,311
+- https://albeasystems.github.io/notaspau/notas-de-corte/ciencias-de-la-salud/

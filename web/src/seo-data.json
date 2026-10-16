@@ -1,0 +1,1767 @@
+{
+ "version": 18,
+ "actualizado": "2026-09-27",
+ "year": 2026,
+ "totalEntradas": 8605,
+ "titulaciones": 2011,
+ "universidades": 220,
+ "comunidades": 20,
+ "años": [
+  2025,
+  2026
+ ],
+ "ramas": [
+  {
+   "name": "Ingeniería y Arquitectura",
+   "slug": "ingenieria-y-arquitectura",
+   "titulaciones": 292,
+   "universidades": 50,
+   "mediana": 9.47,
+   "max": 13.556,
+   "top": [
+    {
+     "carrera": "Doble Grado en Ingeniería en Tecnologías y Servicios de Telecomunicación + Ciencia e Ingeniería de Datos",
+     "universidad": "Universidad de Oviedo",
+     "nota": 13.556,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Grado en Ingeniería de Tecnologías Industriales + Máster Universitario en Ingeniería Industrial (Programa de Ingeniero/a Industrial)",
+     "universidad": "Universidad Politécnica de Madrid",
+     "nota": 13.526,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Grado en Ingeniería Aeroespacial (con reserva plaza Máster)",
+     "universidad": "Universitat Politècnica de València",
+     "nota": 13.504,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Grado en Ingeniería en Tecnologías Industriales + Máster en Ingeniería Industrial",
+     "universidad": "Universidad Carlos III de Madrid",
+     "nota": 13.503,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Doble Grado en Matemáticas + Ingeniería Informática",
+     "universidad": "Universitat Politècnica de València",
+     "nota": 13.5,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Grado en Ingeniería de Tecnologías Aeroespaciales + Máster Universitario en Ingeniería Aeronáutica (Programa de Ingeniero Aeronáutico)",
+     "universidad": "Universidad Politécnica de Madrid",
+     "nota": 13.468,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Doble Grado en Ingeniería Física + Ingeniería en Tecnologías Industriales",
+     "universidad": "Universidad Carlos III de Madrid",
+     "nota": 13.45,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Grado en Ingeniería Aeroespacial (con reserva plaza Máster)",
+     "universidad": "Universidad de Sevilla",
+     "nota": 13.34,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Grado en Ingeniería Biomédica + Máster Universitario en Ingeniería Biomédica (Programa de Ingeniero/a Biomédico/a)",
+     "universidad": "Universidad Politécnica de Madrid",
+     "nota": 13.326,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Grado en Ingeniería Aeroespacial",
+     "universidad": "Universidad Carlos III de Madrid",
+     "nota": 13.322,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Doble Grado en Ingeniería Informática del Software + Matemáticas",
+     "universidad": "Universidad de Oviedo",
+     "nota": 13.3,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Doble Grado en Ingeniería Informática + Matemáticas",
+     "universidad": "Universidad Complutense de Madrid",
+     "nota": 13.29,
+     "rama": "Ingeniería y Arquitectura"
+    }
+   ]
+  },
+  {
+   "name": "Ciencias Sociales y Jurídicas",
+   "slug": "ciencias-sociales-y-juridicas",
+   "titulaciones": 291,
+   "universidades": 55,
+   "mediana": 8.94,
+   "max": 13.336,
+   "top": [
+    {
+     "carrera": "Doble Grado en Relaciones Internacionales + Derecho",
+     "universidad": "Universidad Pablo de Olavide",
+     "nota": 13.336,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Doble Grado en Estudios Internacionales + Derecho",
+     "universidad": "Universidad Carlos III de Madrid",
+     "nota": 13.175,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Doble Grado en Derecho + Relaciones Internacionales",
+     "universidad": "Universidad Rey Juan Carlos",
+     "nota": 13.114,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Grado en Neurociencia",
+     "universidad": "Universidad Carlos III de Madrid",
+     "nota": 13.043,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Doble Grado en Estudios Internacionales + ADE",
+     "universidad": "Universidad Carlos III de Madrid",
+     "nota": 13.01,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Doble Grado en Derecho + Relaciones Internacionales",
+     "universidad": "Universitat Autònoma de Barcelona",
+     "nota": 12.972,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Doble Grado en Educación Infantil + Educación Primaria",
+     "universidad": "Universidad de Sevilla",
+     "nota": 12.878,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Doble Grado en Estudios Internacionales + Economía",
+     "universidad": "Universidad Carlos III de Madrid",
+     "nota": 12.86,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Doble Grado en Relaciones Internacionales + Ciencias Políticas y de la Administración",
+     "universidad": "Universidad Pablo de Olavide",
+     "nota": 12.845,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Doble Grado en Comunicación Audiovisual + Periodismo",
+     "universidad": "Universidade de Santiago de Compostela",
+     "nota": 12.754,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Grado en Relaciones Internacionales",
+     "universidad": "Universidad Pablo de Olavide",
+     "nota": 12.736,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Doble Grado en Estadística y Empresa + Finanzas y Contabilidad",
+     "universidad": "Universidad de Sevilla",
+     "nota": 12.721,
+     "rama": "Ciencias Sociales y Jurídicas"
+    }
+   ]
+  },
+  {
+   "name": "Arte y Humanidades",
+   "slug": "arte-y-humanidades",
+   "titulaciones": 91,
+   "universidades": 37,
+   "mediana": 7.73,
+   "max": 13.395,
+   "top": [
+    {
+     "carrera": "Doble Grado en Traducción e Interpretación: en Inglés-Alemán + Inglés-Francés",
+     "universidad": "Universidad de Las Palmas de Gran Canaria",
+     "nota": 13.395,
+     "rama": "Arte y Humanidades"
+    },
+    {
+     "carrera": "Doble Grado en Traducción e Interpretación + Derecho",
+     "universidad": "Universidad de Salamanca",
+     "nota": 13.328,
+     "rama": "Arte y Humanidades"
+    },
+    {
+     "carrera": "Doble Grado en Historia + Estudios Internacionales",
+     "universidad": "Universidad Autónoma de Madrid",
+     "nota": 13.142,
+     "rama": "Arte y Humanidades"
+    },
+    {
+     "carrera": "Doble Grado en Estudios Ingleses + Filología Hispánica",
+     "universidad": "Universidad de Granada",
+     "nota": 12.638,
+     "rama": "Arte y Humanidades"
+    },
+    {
+     "carrera": "Doble Grado en Filología Clásica + Estudios Ingleses",
+     "universidad": "Universidad de Cádiz",
+     "nota": 12.541,
+     "rama": "Arte y Humanidades"
+    },
+    {
+     "carrera": "Doble Grado en Filología Clásica + Filología Hispánica",
+     "universidad": "Universidad de Sevilla",
+     "nota": 12.498,
+     "rama": "Arte y Humanidades"
+    },
+    {
+     "carrera": "Grado en Filosofía, Política y Economía (Interuniversitario UC3M-UAB-UPF-UAM)",
+     "universidad": "Universidad Carlos III de Madrid",
+     "nota": 12.477,
+     "rama": "Arte y Humanidades"
+    },
+    {
+     "carrera": "Doble Grado en Geografía e Historia + Relaciones Internacionales",
+     "universidad": "Universidad Pablo de Olavide",
+     "nota": 12.361,
+     "rama": "Arte y Humanidades"
+    },
+    {
+     "carrera": "Doble Grado en Bellas Artes + Diseño",
+     "universidad": "Universidad de La Laguna",
+     "nota": 12.323,
+     "rama": "Arte y Humanidades"
+    },
+    {
+     "carrera": "Doble Grado en Filosofía + Historia",
+     "universidad": "Universidad Autónoma de Madrid",
+     "nota": 12.135,
+     "rama": "Arte y Humanidades"
+    },
+    {
+     "carrera": "Grado en Filosofía, Política y Economía (Interuniversitario UPF-UC3M-UAM)",
+     "universidad": "Universitat Pompeu Fabra",
+     "nota": 12.106,
+     "rama": "Arte y Humanidades"
+    },
+    {
+     "carrera": "Doble Grado en Historia + Historia del Arte",
+     "universidad": "Universidad de Sevilla",
+     "nota": 11.951,
+     "rama": "Arte y Humanidades"
+    }
+   ]
+  },
+  {
+   "name": "Ciencias",
+   "slug": "ciencias",
+   "titulaciones": 59,
+   "universidades": 46,
+   "mediana": 10.83,
+   "max": 13.715,
+   "top": [
+    {
+     "carrera": "Doble Grado en Matemáticas + Física",
+     "universidad": "Universidad Complutense de Madrid",
+     "nota": 13.715,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Doble Grado en Matemáticas + Física",
+     "universidad": "Universidad de Granada",
+     "nota": 13.625,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Doble Grado en Física + Matemáticas",
+     "universidad": "Universidad de Sevilla",
+     "nota": 13.594,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Doble Grado en Matemáticas + Física",
+     "universidad": "Universidad de Murcia",
+     "nota": 13.475,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Doble Grado en Matemáticas + Física",
+     "universidad": "Universidade de Santiago de Compostela",
+     "nota": 13.449,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Doble Grado en Física + Matemáticas",
+     "universidad": "Universitat de València",
+     "nota": 13.441,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Doble Grado en Física + Matemáticas",
+     "universidad": "Universidad de Salamanca",
+     "nota": 13.386,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Doble Grado en Física + Matemáticas",
+     "universidad": "Universidad de Valladolid",
+     "nota": 13.06,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Doble Grado en Matemáticas + Estadística",
+     "universidad": "Universidad de Sevilla",
+     "nota": 12.976,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Doble Grado en Física + Matemáticas",
+     "universidad": "Universitat Autònoma de Barcelona",
+     "nota": 12.924,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Doble Grado en Física + Matemáticas",
+     "universidad": "Universidad de Alicante",
+     "nota": 12.921,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Grado en Bioquímica y Ciencias Biomédicas",
+     "universidad": "Universitat de València",
+     "nota": 12.842,
+     "rama": "Ciencias"
+    }
+   ]
+  },
+  {
+   "name": "Ciencias de la Salud",
+   "slug": "ciencias-de-la-salud",
+   "titulaciones": 34,
+   "universidades": 58,
+   "mediana": 11.4,
+   "max": 13.35,
+   "top": [
+    {
+     "carrera": "Doble Grado en Biotecnología + Farmacia",
+     "universidad": "Universidad de Salamanca",
+     "nota": 13.35,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Biomedicina Básica y Experimental",
+     "universidad": "Universidad de Sevilla",
+     "nota": 13.345,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Medicina",
+     "universidad": "Universidad de Extremadura",
+     "nota": 13.33,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Medicina",
+     "universidad": "Universidad de Sevilla",
+     "nota": 13.32,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Medicina",
+     "universidad": "Universidad de Murcia",
+     "nota": 13.311,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Medicina",
+     "universidad": "Universidad de Granada",
+     "nota": 13.294,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Doble Grado en Fisioterapia + Ciencias de la Actividad Física y del Deporte",
+     "universidad": "Universidad de Sevilla",
+     "nota": 13.275,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Medicina",
+     "universidad": "Universidad de Córdoba",
+     "nota": 13.204,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Medicina",
+     "universidad": "Universidad de Alicante",
+     "nota": 13.172,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Medicina",
+     "universidad": "Universitat de València",
+     "nota": 13.171,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Odontología",
+     "universidad": "Universidad de Sevilla",
+     "nota": 13.167,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Medicina",
+     "universidad": "Universidad Miguel Hernández de Elche",
+     "nota": 13.166,
+     "rama": "Ciencias de la Salud"
+    }
+   ]
+  }
+ ],
+ "comunidadesList": [
+  {
+   "name": "Comunidad de Madrid",
+   "slug": "comunidad-de-madrid",
+   "titulaciones": 274,
+   "universidades": 8,
+   "mediana": 10.35,
+   "max": 13.715,
+   "top": [
+    {
+     "carrera": "Doble Grado en Matemáticas + Física",
+     "universidad": "Universidad Complutense de Madrid",
+     "nota": 13.715,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Grado en Ingeniería de Tecnologías Industriales + Máster Universitario en Ingeniería Industrial (Programa de Ingeniero/a Industrial)",
+     "universidad": "Universidad Politécnica de Madrid",
+     "nota": 13.526,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Grado en Ingeniería en Tecnologías Industriales + Máster en Ingeniería Industrial",
+     "universidad": "Universidad Carlos III de Madrid",
+     "nota": 13.503,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Grado en Ingeniería de Tecnologías Aeroespaciales + Máster Universitario en Ingeniería Aeronáutica (Programa de Ingeniero Aeronáutico)",
+     "universidad": "Universidad Politécnica de Madrid",
+     "nota": 13.468,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Doble Grado en Ingeniería Física + Ingeniería en Tecnologías Industriales",
+     "universidad": "Universidad Carlos III de Madrid",
+     "nota": 13.45,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Grado en Ingeniería Biomédica + Máster Universitario en Ingeniería Biomédica (Programa de Ingeniero/a Biomédico/a)",
+     "universidad": "Universidad Politécnica de Madrid",
+     "nota": 13.326,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Grado en Ingeniería Aeroespacial",
+     "universidad": "Universidad Carlos III de Madrid",
+     "nota": 13.322,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Doble Grado en Ingeniería Informática + Matemáticas",
+     "universidad": "Universidad Complutense de Madrid",
+     "nota": 13.29,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Grado en Ingeniería Física",
+     "universidad": "Universidad Carlos III de Madrid",
+     "nota": 13.194,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Doble Grado en Estudios Internacionales + Derecho",
+     "universidad": "Universidad Carlos III de Madrid",
+     "nota": 13.175,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Doble Grado en Historia + Estudios Internacionales",
+     "universidad": "Universidad Autónoma de Madrid",
+     "nota": 13.142,
+     "rama": "Arte y Humanidades"
+    },
+    {
+     "carrera": "Grado en Fundamentos de la Arquitectura + Máster Universitario en Arquitectura (Programa de Arquitecto/a)",
+     "universidad": "Universidad Politécnica de Madrid",
+     "nota": 13.136,
+     "rama": "Ingeniería y Arquitectura"
+    }
+   ]
+  },
+  {
+   "name": "Cataluña",
+   "slug": "cataluna",
+   "titulaciones": 230,
+   "universidades": 16,
+   "mediana": 9.06,
+   "max": 12.972,
+   "top": [
+    {
+     "carrera": "Doble Grado en Derecho + Relaciones Internacionales",
+     "universidad": "Universitat Autònoma de Barcelona",
+     "nota": 12.972,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Doble Grado en Física + Matemáticas",
+     "universidad": "Universitat Autònoma de Barcelona",
+     "nota": 12.924,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Doble Grado en Física + Matemáticas",
+     "universidad": "Universitat de Barcelona",
+     "nota": 12.812,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Grado en Ingeniería en Tecnologías Aeroespaciales + Máster Universitario en Ingeniería Aeronáutica (Programa Ingeniero/a Aeronáutico/a)",
+     "universidad": "Universitat Politècnica de Catalunya",
+     "nota": 12.694,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Grado en Medicina",
+     "universidad": "Universitat de Barcelona",
+     "nota": 12.685,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Matemáticas",
+     "universidad": "Universitat Politècnica de Catalunya",
+     "nota": 12.552,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Grado en Medicina",
+     "universidad": "Universitat Pompeu Fabra",
+     "nota": 12.534,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Tecnologías Industriales y Análisis Económico + Máster Universitario en Ingeniería Industrial (Programa de Ingeniero/a Industrial y Análisis Económico)",
+     "universidad": "Universitat Politècnica de Catalunya",
+     "nota": 12.508,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Grado en Ingeniería de Vehículos Aeroespaciales",
+     "universidad": "Universitat Politècnica de Catalunya",
+     "nota": 12.432,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Grado en Odontología",
+     "universidad": "Universitat de Barcelona",
+     "nota": 12.43,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Medicina",
+     "universidad": "Universitat Rovira i Virgili",
+     "nota": 12.426,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Ingeniería Física",
+     "universidad": "Universitat Politècnica de Catalunya",
+     "nota": 12.406,
+     "rama": "Ingeniería y Arquitectura"
+    }
+   ]
+  },
+  {
+   "name": "Andalucía",
+   "slug": "andalucia",
+   "titulaciones": 189,
+   "universidades": 10,
+   "mediana": 9.7,
+   "max": 13.625,
+   "top": [
+    {
+     "carrera": "Doble Grado en Matemáticas + Física",
+     "universidad": "Universidad de Granada",
+     "nota": 13.625,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Doble Grado en Física + Matemáticas",
+     "universidad": "Universidad de Sevilla",
+     "nota": 13.594,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Grado en Biomedicina Básica y Experimental",
+     "universidad": "Universidad de Sevilla",
+     "nota": 13.345,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Ingeniería Aeroespacial (con reserva plaza Máster)",
+     "universidad": "Universidad de Sevilla",
+     "nota": 13.34,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Doble Grado en Relaciones Internacionales + Derecho",
+     "universidad": "Universidad Pablo de Olavide",
+     "nota": 13.336,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Grado en Medicina",
+     "universidad": "Universidad de Sevilla",
+     "nota": 13.32,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Medicina",
+     "universidad": "Universidad de Granada",
+     "nota": 13.294,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Doble Grado en Fisioterapia + Ciencias de la Actividad Física y del Deporte",
+     "universidad": "Universidad de Sevilla",
+     "nota": 13.275,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Doble Grado en Matemáticas + Ingeniería Informática",
+     "universidad": "Universidad de Cádiz",
+     "nota": 13.258,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Grado en Medicina",
+     "universidad": "Universidad de Córdoba",
+     "nota": 13.204,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Odontología",
+     "universidad": "Universidad de Sevilla",
+     "nota": 13.167,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Medicina",
+     "universidad": "Universidad de Málaga",
+     "nota": 13.125,
+     "rama": "Ciencias de la Salud"
+    }
+   ]
+  },
+  {
+   "name": "Comunitat Valenciana",
+   "slug": "comunitat-valenciana",
+   "titulaciones": 158,
+   "universidades": 5,
+   "mediana": 9.69,
+   "max": 13.504,
+   "top": [
+    {
+     "carrera": "Grado en Ingeniería Aeroespacial (con reserva plaza Máster)",
+     "universidad": "Universitat Politècnica de València",
+     "nota": 13.504,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Doble Grado en Matemáticas + Ingeniería Informática",
+     "universidad": "Universitat Politècnica de València",
+     "nota": 13.5,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Doble Grado en Física + Matemáticas",
+     "universidad": "Universitat de València",
+     "nota": 13.441,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Grado en Ingeniería Aeroespacial",
+     "universidad": "Universitat Politècnica de València",
+     "nota": 13.275,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Grado en Medicina",
+     "universidad": "Universidad de Alicante",
+     "nota": 13.172,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Medicina",
+     "universidad": "Universitat de València",
+     "nota": 13.171,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Medicina",
+     "universidad": "Universidad Miguel Hernández de Elche",
+     "nota": 13.166,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Medicina",
+     "universidad": "Universitat Jaume I",
+     "nota": 13.021,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Odontología",
+     "universidad": "Universitat de València",
+     "nota": 12.976,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Doble Grado en Matemáticas + Ingeniería Informática",
+     "universidad": "Universitat de València",
+     "nota": 12.968,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Doble Grado en Física + Matemáticas",
+     "universidad": "Universidad de Alicante",
+     "nota": 12.921,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Grado en Ingeniería Aeroespacial",
+     "universidad": "Universidad de Alicante",
+     "nota": 12.878,
+     "rama": "Ingeniería y Arquitectura"
+    }
+   ]
+  },
+  {
+   "name": "Castilla y León",
+   "slug": "castilla-y-leon",
+   "titulaciones": 120,
+   "universidades": 7,
+   "mediana": 8.1,
+   "max": 13.386,
+   "top": [
+    {
+     "carrera": "Doble Grado en Física + Matemáticas",
+     "universidad": "Universidad de Salamanca",
+     "nota": 13.386,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Doble Grado en Biotecnología + Farmacia",
+     "universidad": "Universidad de Salamanca",
+     "nota": 13.35,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Doble Grado en Traducción e Interpretación + Derecho",
+     "universidad": "Universidad de Salamanca",
+     "nota": 13.328,
+     "rama": "Arte y Humanidades"
+    },
+    {
+     "carrera": "Doble Grado en Física + Matemáticas",
+     "universidad": "Universidad de Valladolid",
+     "nota": 13.06,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Grado en Medicina",
+     "universidad": "Universidad de Salamanca",
+     "nota": 12.95,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Odontología",
+     "universidad": "Universidad de Salamanca",
+     "nota": 12.819,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Biomedicina y Terapias Avanzadas",
+     "universidad": "Universidad de Valladolid",
+     "nota": 12.8,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Medicina",
+     "universidad": "Universidad de Valladolid",
+     "nota": 12.76,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Doble Grado en Maestro en Educación Primaria + Maestro en Educación Infantil",
+     "universidad": "Universidad de Salamanca",
+     "nota": 12.653,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Grado en Ingeniería Aeroespacial",
+     "universidad": "Universidad de León",
+     "nota": 12.577,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Doble Grado en Física + Química",
+     "universidad": "Universidad de Valladolid",
+     "nota": 12.564,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Doble Grado en Ingeniería Informática de Servicios y Aplicaciones + Matemáticas",
+     "universidad": "Universidad de Valladolid",
+     "nota": 12.552,
+     "rama": "Ingeniería y Arquitectura"
+    }
+   ]
+  },
+  {
+   "name": "Galicia",
+   "slug": "galicia",
+   "titulaciones": 114,
+   "universidades": 8,
+   "mediana": 9.18,
+   "max": 13.449,
+   "top": [
+    {
+     "carrera": "Doble Grado en Matemáticas + Física",
+     "universidad": "Universidade de Santiago de Compostela",
+     "nota": 13.449,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Doble Grado en Ingeniería Informática + Matemáticas",
+     "universidad": "Universidade de Santiago de Compostela",
+     "nota": 13.046,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Grado en Ingeniería Aeroespacial (con reserva plaza Máster)",
+     "universidad": "Universidade de Vigo",
+     "nota": 13.01,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Grado en Medicina",
+     "universidad": "Universidade de Santiago de Compostela",
+     "nota": 12.844,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Odontología",
+     "universidad": "Universidade de Santiago de Compostela",
+     "nota": 12.815,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Doble Grado en Comunicación Audiovisual + Periodismo",
+     "universidad": "Universidade de Santiago de Compostela",
+     "nota": 12.754,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Grado en Ingeniería Aeroespacial",
+     "universidad": "Universidade de Vigo",
+     "nota": 12.316,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Grado en Biotecnología",
+     "universidad": "Universidade de Santiago de Compostela",
+     "nota": 12.288,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Grado en Ingeniería Biomédica + Máster en Ingeniería Biomédica (PARS Ingeniería Biomédica)",
+     "universidad": "Universidade de Vigo",
+     "nota": 12.225,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Grado en Matemáticas",
+     "universidad": "Universidade de Santiago de Compostela",
+     "nota": 12.214,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Grado en Física",
+     "universidad": "Universidade de Santiago de Compostela",
+     "nota": 11.942,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Grado en Enfermería",
+     "universidad": "Universidade de Santiago de Compostela",
+     "nota": 11.94,
+     "rama": "Ciencias de la Salud"
+    }
+   ]
+  },
+  {
+   "name": "Región de Murcia",
+   "slug": "region-de-murcia",
+   "titulaciones": 76,
+   "universidades": 2,
+   "mediana": 10.01,
+   "max": 13.475,
+   "top": [
+    {
+     "carrera": "Doble Grado en Matemáticas + Física",
+     "universidad": "Universidad de Murcia",
+     "nota": 13.475,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Grado en Medicina",
+     "universidad": "Universidad de Murcia",
+     "nota": 13.311,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Odontología",
+     "universidad": "Universidad de Murcia",
+     "nota": 13.132,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Doble Grado en Ingeniería Mecánica + Ingeniería en Diseño Industrial y Desarrollo de Producto",
+     "universidad": "Universidad Politécnica de Cartagena",
+     "nota": 12.853,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Grado en Farmacia",
+     "universidad": "Universidad de Murcia",
+     "nota": 12.776,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Enfermería",
+     "universidad": "Universidad de Murcia",
+     "nota": 12.736,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Programa de Estudios Simultáneos en Matemáticas + Ingeniería Informática",
+     "universidad": "Universidad de Murcia",
+     "nota": 12.63,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Doble Grado en Ingeniería Biomédica + Ingeniería Electrónica Industrial y Automática",
+     "universidad": "Universidad Politécnica de Cartagena",
+     "nota": 12.581,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Grado en Ingeniería Biomédica",
+     "universidad": "Universidad Politécnica de Cartagena",
+     "nota": 12.549,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Grado en Biotecnología",
+     "universidad": "Universidad de Murcia",
+     "nota": 12.464,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Grado en Matemáticas",
+     "universidad": "Universidad de Murcia",
+     "nota": 12.415,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Grado en Veterinaria",
+     "universidad": "Universidad de Murcia",
+     "nota": 12.3,
+     "rama": "Ciencias de la Salud"
+    }
+   ]
+  },
+  {
+   "name": "Canarias",
+   "slug": "canarias",
+   "titulaciones": 68,
+   "universidades": 2,
+   "mediana": 9.41,
+   "max": 13.395,
+   "top": [
+    {
+     "carrera": "Doble Grado en Traducción e Interpretación: en Inglés-Alemán + Inglés-Francés",
+     "universidad": "Universidad de Las Palmas de Gran Canaria",
+     "nota": 13.395,
+     "rama": "Arte y Humanidades"
+    },
+    {
+     "carrera": "Grado en Medicina",
+     "universidad": "Universidad de La Laguna",
+     "nota": 12.91,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Enfermería",
+     "universidad": "Universidad de La Laguna",
+     "nota": 12.341,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Doble Grado en Bellas Artes + Diseño",
+     "universidad": "Universidad de La Laguna",
+     "nota": 12.323,
+     "rama": "Arte y Humanidades"
+    },
+    {
+     "carrera": "Grado en Medicina",
+     "universidad": "Universidad de Las Palmas de Gran Canaria",
+     "nota": 12.176,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Doble Grado en Educación Infantil + Educación Primaria",
+     "universidad": "Universidad de Las Palmas de Gran Canaria",
+     "nota": 12.078,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Grado en Fisioterapia",
+     "universidad": "Universidad de La Laguna",
+     "nota": 11.842,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Biotecnología",
+     "universidad": "Universidad de Las Palmas de Gran Canaria",
+     "nota": 11.836,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Grado en Enfermería",
+     "universidad": "Universidad de Las Palmas de Gran Canaria",
+     "nota": 11.797,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Física",
+     "universidad": "Universidad de La Laguna",
+     "nota": 11.656,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Grado en Veterinaria",
+     "universidad": "Universidad de Las Palmas de Gran Canaria",
+     "nota": 11.6,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Ciencias de la Actividad Física y del Deporte",
+     "universidad": "Universidad de La Laguna",
+     "nota": 11.38,
+     "rama": "Ciencias de la Salud"
+    }
+   ]
+  },
+  {
+   "name": "Asturias",
+   "slug": "asturias",
+   "titulaciones": 62,
+   "universidades": 2,
+   "mediana": 8.83,
+   "max": 13.556,
+   "top": [
+    {
+     "carrera": "Doble Grado en Ingeniería en Tecnologías y Servicios de Telecomunicación + Ciencia e Ingeniería de Datos",
+     "universidad": "Universidad de Oviedo",
+     "nota": 13.556,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Doble Grado en Ingeniería Informática del Software + Matemáticas",
+     "universidad": "Universidad de Oviedo",
+     "nota": 13.3,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Doble Grado en Ingeniería Informática en Tecnologías de la Información + Ciencia e Ingeniería de Datos",
+     "universidad": "Universidad de Oviedo",
+     "nota": 13.228,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Grado en Medicina",
+     "universidad": "Universidad de Oviedo",
+     "nota": 13.05,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Odontología",
+     "universidad": "Universidad de Oviedo",
+     "nota": 12.948,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Biotecnología",
+     "universidad": "Universidad de Oviedo",
+     "nota": 12.765,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Grado en Enfermería",
+     "universidad": "Universidad de Oviedo",
+     "nota": 12.526,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Doble Grado en Matemáticas + Física (Opción B - predomina Física)",
+     "universidad": "Universidad de Oviedo",
+     "nota": 12.478,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Doble Grado en Maestro en Educación Primaria + Maestro en Educación Infantil",
+     "universidad": "Universidad de Oviedo",
+     "nota": 12.268,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Grado en Fisioterapia",
+     "universidad": "Universidad de Oviedo",
+     "nota": 12.186,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Matemáticas",
+     "universidad": "Universidad de Oviedo",
+     "nota": 12.168,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Grado en Psicología",
+     "universidad": "Universidad de Oviedo",
+     "nota": 11.95,
+     "rama": "Ciencias Sociales y Jurídicas"
+    }
+   ]
+  },
+  {
+   "name": "Extremadura",
+   "slug": "extremadura",
+   "titulaciones": 49,
+   "universidades": 2,
+   "mediana": 10.08,
+   "max": 13.33,
+   "top": [
+    {
+     "carrera": "Grado en Medicina",
+     "universidad": "Universidad de Extremadura",
+     "nota": 13.33,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Fisioterapia",
+     "universidad": "Universidad de Extremadura",
+     "nota": 12.603,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Psicología",
+     "universidad": "Universidad de Extremadura",
+     "nota": 12.553,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Grado en Biotecnología",
+     "universidad": "Universidad de Extremadura",
+     "nota": 12.55,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Grado en Enfermería",
+     "universidad": "Universidad de Extremadura",
+     "nota": 12.418,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Bioquímica",
+     "universidad": "Universidad de Extremadura",
+     "nota": 12.416,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "PCEO en Matemáticas + Estadística",
+     "universidad": "Universidad de Extremadura",
+     "nota": 12.408,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Grado en Veterinaria",
+     "universidad": "Universidad de Extremadura",
+     "nota": 12.319,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Matemáticas",
+     "universidad": "Universidad de Extremadura",
+     "nota": 12.285,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Grado en Criminología",
+     "universidad": "Universidad de Extremadura",
+     "nota": 11.911,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Grado en Física",
+     "universidad": "Universidad de Extremadura",
+     "nota": 11.886,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Grado en Ciencias de la Actividad Física y del Deporte",
+     "universidad": "Universidad de Extremadura",
+     "nota": 11.675,
+     "rama": "Ciencias"
+    }
+   ]
+  },
+  {
+   "name": "Aragón",
+   "slug": "aragon",
+   "titulaciones": 49,
+   "universidades": 4,
+   "mediana": 9.58,
+   "max": 12.904,
+   "top": [
+    {
+     "carrera": "Grado en Medicina",
+     "universidad": "Universidad de Zaragoza",
+     "nota": 12.904,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Doble Grado en Matemáticas + Ingeniería Informática",
+     "universidad": "Universidad de Zaragoza",
+     "nota": 12.808,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Grado en Odontología",
+     "universidad": "Universidad de Zaragoza",
+     "nota": 12.69,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Biotecnología",
+     "universidad": "Universidad de Zaragoza",
+     "nota": 12.233,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Grado en Ingeniería Biomédica",
+     "universidad": "Universidad de Zaragoza",
+     "nota": 12.18,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Doble Grado en Nutrición Humana y Dietética + Ciencias de la Actividad Física y del Deporte",
+     "universidad": "Universidad de Zaragoza",
+     "nota": 11.961,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Enfermería",
+     "universidad": "Universidad de Zaragoza",
+     "nota": 11.888,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Enfermería",
+     "universidad": "E.U. de Enfermería de Huesca",
+     "nota": 11.775,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Enfermería",
+     "universidad": "E.U. de Enfermería de Teruel",
+     "nota": 11.77,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Veterinaria",
+     "universidad": "Universidad de Zaragoza",
+     "nota": 11.7,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Doble Grado en Derecho + ADE",
+     "universidad": "Universidad de Zaragoza",
+     "nota": 11.64,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Grado en Fisioterapia",
+     "universidad": "Universidad de Zaragoza",
+     "nota": 11.632,
+     "rama": "Ciencias de la Salud"
+    }
+   ]
+  },
+  {
+   "name": "Castilla-La Mancha",
+   "slug": "castilla-la-mancha",
+   "titulaciones": 39,
+   "universidades": 2,
+   "mediana": 9.61,
+   "max": 13.049,
+   "top": [
+    {
+     "carrera": "Grado en Medicina",
+     "universidad": "Universidad de Castilla - La Mancha",
+     "nota": 13.049,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Doble Grado en Derecho + Estudios Internacionales",
+     "universidad": "Universidad de Castilla - La Mancha",
+     "nota": 12.307,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Grado en Ingeniería Aeroespacial",
+     "universidad": "Universidad de Castilla - La Mancha",
+     "nota": 12.261,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Grado en Enfermería",
+     "universidad": "Universidad de Castilla - La Mancha",
+     "nota": 11.836,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Doble Grado en ADE + Estudios Internacionales",
+     "universidad": "Universidad de Castilla - La Mancha",
+     "nota": 11.675,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Grado en Psicología",
+     "universidad": "Universidad de Castilla - La Mancha",
+     "nota": 11.425,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Grado en Matemáticas",
+     "universidad": "Universidad de Castilla - La Mancha",
+     "nota": 11.286,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Grado en Ingeniería Biomédica",
+     "universidad": "Universidad de Castilla - La Mancha",
+     "nota": 11.214,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Doble Grado en Enfermería + Podología",
+     "universidad": "Universidad de Castilla - La Mancha",
+     "nota": 11.194,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Física",
+     "universidad": "Universidad de Castilla - La Mancha",
+     "nota": 11.103,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Doble Grado en Maestro en Educación Primaria + Maestro en Educación Infantil",
+     "universidad": "Universidad de Castilla - La Mancha",
+     "nota": 11.053,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Grado en Enfermería",
+     "universidad": "Universidad de Alcalá",
+     "nota": 10.96,
+     "rama": "Ciencias de la Salud"
+    }
+   ]
+  },
+  {
+   "name": "Islas Baleares",
+   "slug": "islas-baleares",
+   "titulaciones": 36,
+   "universidades": 3,
+   "mediana": 8.67,
+   "max": 12.72,
+   "top": [
+    {
+     "carrera": "Grado en Medicina",
+     "universidad": "Universitat de les Illes Balears",
+     "nota": 12.72,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Farmacia",
+     "universidad": "Universitat de les Illes Balears",
+     "nota": 11.716,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Enfermería",
+     "universidad": "Universitat de les Illes Balears",
+     "nota": 11.49,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Bioquímica",
+     "universidad": "Universitat de les Illes Balears",
+     "nota": 10.776,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Doble Grado en Maestro de Educación Infantil + Maestro de Educación Primaria",
+     "universidad": "Universitat de les Illes Balears",
+     "nota": 10.714,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Grado en Odontología (en inglés)",
+     "universidad": "Universitat de les Illes Balears",
+     "nota": 10.652,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Fisioterapia",
+     "universidad": "Universitat de les Illes Balears",
+     "nota": 10.61,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Doble Grado en ADE + Derecho",
+     "universidad": "Universitat de les Illes Balears",
+     "nota": 10.564,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Grado en Ciencias de la Actividad Física y del Deporte",
+     "universidad": "Universitat de les Illes Balears",
+     "nota": 10.562,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Doble Grado en Matemáticas + Ingeniería Informática",
+     "universidad": "Universitat de les Illes Balears",
+     "nota": 10.394,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Grado en Psicología",
+     "universidad": "Universitat de les Illes Balears",
+     "nota": 10.372,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Grado en Ingeniería Electrónica Industrial y Automática",
+     "universidad": "Universitat de les Illes Balears",
+     "nota": 10.087,
+     "rama": "Ingeniería y Arquitectura"
+    }
+   ]
+  },
+  {
+   "name": "Navarra",
+   "slug": "navarra",
+   "titulaciones": 35,
+   "universidades": 1,
+   "mediana": 10.03,
+   "max": 12.902,
+   "top": [
+    {
+     "carrera": "Grado en Medicina",
+     "universidad": "Universidad Pública de Navarra",
+     "nota": 12.902,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Doble Grado en Ciencia de Datos + Biotecnología",
+     "universidad": "Universidad Pública de Navarra",
+     "nota": 12.284,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Doble Grado en Ingeniería en Tecnologías de Telecomunicación + Ingeniería Biomédica",
+     "universidad": "Universidad Pública de Navarra",
+     "nota": 12.216,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Doble Grado en Ciencia de Datos + ADE",
+     "universidad": "Universidad Pública de Navarra",
+     "nota": 11.997,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Doble Grado en Maestro en Educación Infantil + Maestro en Educación Primaria (Programa Internacional)",
+     "universidad": "Universidad Pública de Navarra",
+     "nota": 11.878,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Grado en Ingeniería Biomédica",
+     "universidad": "Universidad Pública de Navarra",
+     "nota": 11.84,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Grado en Enfermería",
+     "universidad": "Universidad Pública de Navarra",
+     "nota": 11.8,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Doble Grado en Ciencias de la Actividad Física y del Deporte + Fisioterapia",
+     "universidad": "Universidad Pública de Navarra",
+     "nota": 11.664,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Biotecnología",
+     "universidad": "Universidad Pública de Navarra",
+     "nota": 11.616,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Doble Grado en ADE + Derecho",
+     "universidad": "Universidad Pública de Navarra",
+     "nota": 11.539,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Grado en Psicología",
+     "universidad": "Universidad Pública de Navarra",
+     "nota": 11.296,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Doble Grado en Administración y Dirección de Empresas + Economía (programa internacional) (bilingüe inglés)",
+     "universidad": "Universidad Pública de Navarra",
+     "nota": 11.163,
+     "rama": "Ciencias Sociales y Jurídicas"
+    }
+   ]
+  },
+  {
+   "name": "Cantabria",
+   "slug": "cantabria",
+   "titulaciones": 20,
+   "universidades": 2,
+   "mediana": 9.1,
+   "max": 12.852,
+   "top": [
+    {
+     "carrera": "Grado en Medicina",
+     "universidad": "Universidad de Cantabria",
+     "nota": 12.852,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Doble Grado en Física + Matemáticas",
+     "universidad": "Universidad de Cantabria",
+     "nota": 12.408,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Grado en Ciencias Biomédicas",
+     "universidad": "Universidad de Cantabria",
+     "nota": 12.342,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Grado en Enfermería",
+     "universidad": "Universidad de Cantabria",
+     "nota": 11.911,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Ingeniería Civil (Itinerario Bilingüe Internacional)",
+     "universidad": "Universidad de Cantabria",
+     "nota": 11.838,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Doble Grado en Magisterio en Educación Infantil + Magisterio en Educación Primaria",
+     "universidad": "Universidad de Cantabria",
+     "nota": 11.11,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Grado en Física",
+     "universidad": "Universidad de Cantabria",
+     "nota": 10.97,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Grado en Matemáticas",
+     "universidad": "Universidad de Cantabria",
+     "nota": 10.604,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Doble Grado en ADE + Economía",
+     "universidad": "Universidad de Cantabria",
+     "nota": 9.934,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Grado en Ingeniería Informática",
+     "universidad": "Universidad de Cantabria",
+     "nota": 9.095,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Grado en Magisterio en Educación Primaria",
+     "universidad": "Universidad de Cantabria",
+     "nota": 9.062,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Grado en Ingeniería en Tecnologías Industriales",
+     "universidad": "Universidad de Cantabria",
+     "nota": 8.979,
+     "rama": "Ingeniería y Arquitectura"
+    }
+   ]
+  },
+  {
+   "name": "La Rioja",
+   "slug": "la-rioja",
+   "titulaciones": 19,
+   "universidades": 1,
+   "mediana": 7.05,
+   "max": 11.812,
+   "top": [
+    {
+     "carrera": "Grado en Matemáticas",
+     "universidad": "Universidad de La Rioja",
+     "nota": 11.812,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Grado en Enfermería",
+     "universidad": "Universidad de La Rioja",
+     "nota": 11.636,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Derecho",
+     "universidad": "Universidad de La Rioja",
+     "nota": 9.529,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Grado en Química",
+     "universidad": "Universidad de La Rioja",
+     "nota": 9.084,
+     "rama": "Ciencias"
+    },
+    {
+     "carrera": "Grado en Educación Primaria",
+     "universidad": "Universidad de La Rioja",
+     "nota": 8.656,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Grado en Ingeniería Informática",
+     "universidad": "Universidad de La Rioja",
+     "nota": 8.624,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Grado en Ingeniería Electrónica Industrial y Automática",
+     "universidad": "Universidad de La Rioja",
+     "nota": 8.071,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Grado en Educación Infantil",
+     "universidad": "Universidad de La Rioja",
+     "nota": 7.904,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Grado en Ingeniería Mecánica",
+     "universidad": "Universidad de La Rioja",
+     "nota": 7.244,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Grado en Trabajo Social",
+     "universidad": "Universidad de La Rioja",
+     "nota": 7.054,
+     "rama": "Ciencias Sociales y Jurídicas"
+    },
+    {
+     "carrera": "Grado en Ingeniería Eléctrica",
+     "universidad": "Universidad de La Rioja",
+     "nota": 6.88,
+     "rama": "Ingeniería y Arquitectura"
+    },
+    {
+     "carrera": "Grado en Enología",
+     "universidad": "Universidad de La Rioja",
+     "nota": 6.141,
+     "rama": "Ciencias Sociales y Jurídicas"
+    }
+   ]
+  },
+  {
+   "name": "Ceuta y Melilla",
+   "slug": "ceuta-y-melilla",
+   "titulaciones": 3,
+   "universidades": 1,
+   "mediana": 11.22,
+   "max": 11.29,
+   "top": [
+    {
+     "carrera": "Grado en Enfermería",
+     "universidad": "Universidad de Granada",
+     "nota": 11.29,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Grado en Fisioterapia",
+     "universidad": "Universidad de Granada",
+     "nota": 10.985,
+     "rama": "Ciencias de la Salud"
+    },
+    {
+     "carrera": "Doble Grado en Educación Primaria + Ciencias de la Actividad Física y del Deporte",
+     "universidad": "Universidad de Granada",
+     "nota": 8.824,
+     "rama": "Ciencias"
+    }
+   ]
+  }
+ ]
+}
